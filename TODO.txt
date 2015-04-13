@@ -1,0 +1,6 @@
+Algorithm:
+- Complexity analysis
+
+Evaluation:
+- Scalability, faire evoluer le nombre de sorts et voir le run time
+- Cicardian clock, faire evoluer le chronogram et voir le run time
