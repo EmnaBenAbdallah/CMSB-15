@@ -27,7 +27,7 @@
 \begin{theorem}[Complexity]
 	\label{th:complexity}
 	Let $PH$ be a Process Hitting, $S$ be the number of sorts of $PH$ and $P$ be the maximal number of processes of a sort of $PH$.
-	Let $C$ be a chronogram of the genes of $PH$ over $T$ units of time.
+	Let $C$ be a chronogram of the genes of $PH$ over $T$ units of times.
 	The complexity of completing $PH$ by learning actions from the observations of $C$ with our algorithm belongs to $O(T*P^{S+1})$.
 	\begin{proof}
 	Let $i$ be the maximal indegree of an action in $PH$, $0 \leq i \leq P$.

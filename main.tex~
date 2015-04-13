@@ -197,8 +197,8 @@ IAlmost the models of biological networks are not robust and need some times to 
   \include{parts/processHitting}
   \include{parts/circadianClock}
   \include{parts/PH-ASP}
-  \include{parts/CompletionPH}
-  \include{parts/Evaluation}
+   \include{parts/completionPH}
+   \include{parts/evaluation}
   \include{parts/concl}
   
   \bibliographystyle{plain}
