@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.16)  13 APR 2015 17:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.16)  13 APR 2015 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,8 +846,9 @@ Package: galois 2005/03/19 v1.05, Galois connections, Patrick.Cousot@ens.fr
 \@GALOISgammaarrowhalfheight=\skip62
 )
 Excluding 'comment' comment. Excluding 'comment' comment.) (./main.aux
-(./intro.aux) (./processHitting.aux) (./circadianClock.aux) (./PH-ASP.aux)
-(./completionPH.aux) (./evaluation.aux) (./concl.aux))
+(./parts/intro.aux) (./parts/processHitting.aux) (./parts/circadianClock.aux)
+(./parts/PH-ASP.aux) (./parts/completionPH.aux) (./parts/evaluation.aux)
+(./parts/concl.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 144.
@@ -940,27 +941,20 @@ Missing character: There is no « in font cmr9!
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `intro.aux'.
+\openout2 = `parts/intro.aux'.
 
- (./intro.tex)
-[2
+ (./parts/intro.tex) [2
 
 ]
-\openout2 = `processHitting.aux'.
+\openout2 = `parts/processHitting.aux'.
 
- (./processHitting.tex
-
-LaTeX Warning: Citation `PMR10-TCSB' on page 3 undefined on input line 6.
-
+ (./parts/processHitting.tex
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no œ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no  in font cmr10!
-
-LaTeX Warning: Citation `PMR12-MSCS' on page 3 undefined on input line 31.
-
 
 Overfull \hbox (1.67143pt too wide) in paragraph at lines 33--35
 []\OT1/cmr/bx/n/10 (Process Hit-ting). []\OT1/cmr/m/it/10 A \OT1/cmr/m/n/10 Pro
@@ -976,52 +970,55 @@ Missing character: There is no ; in font nullfont!
 ]
 Missing character: There is no ; in font nullfont!
  [4]) [5]
-\openout2 = `circadianClock.aux'.
+\openout2 = `parts/circadianClock.aux'.
 
- (./circadianClock.tex) [6
-
-
-]
-\openout2 = `PH-ASP.aux'.
-
- (./PH-ASP.tex) [7
+ (./parts/circadianClock.tex) [6
 
 
 ]
-\openout2 = `completionPH.aux'.
+\openout2 = `parts/PH-ASP.aux'.
 
- (./completionPH.tex) [8
-
-
-]
-\openout2 = `evaluation.aux'.
-
- (./evaluation.tex) [9
+ (./parts/PH-ASP.tex) [7
 
 
 ]
-\openout2 = `concl.aux'.
+\openout2 = `parts/completionPH.aux'.
 
- (./concl.tex) [10
+
+(./parts/completionPH.tex) [8
 
 
 ]
-No file main.bbl.
+\openout2 = `parts/evaluation.aux'.
+
+
+No file parts/evaluation.tex.
+\openout2 = `parts/concl.aux'.
+
+(./parts/concl.tex) [9
+
+
+
+
+] (./main.bbl) [10
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
-(./main.aux (./intro.aux) (./processHitting.aux) (./circadianClock.aux)
-(./PH-ASP.aux) (./completionPH.aux) (./evaluation.aux) (./concl.aux))
+ (./main.aux (./parts/intro.aux)
+(./parts/processHitting.aux) (./parts/circadianClock.aux) (./parts/PH-ASP.aux)
+(./parts/completionPH.aux) (./parts/evaluation.aux) (./parts/concl.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8BDF154358D345E5BA8DE654FE229887;1089.
+(rerunfilecheck)             Checksum: 39173B55037E27CC7B0BE7344231A0CA;949.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
  ) 
 Here is how much of TeX's memory you used:
- 21562 strings out of 493117
- 433536 string characters out of 6135433
- 537166 words of memory out of 5000000
- 24525 multiletter control sequences out of 15000+600000
+ 21563 strings out of 493117
+ 433803 string characters out of 6135433
+ 537243 words of memory out of 5000000
+ 24524 multiletter control sequences out of 15000+600000
  11978 words of font info for 47 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  55i,12n,82p,1252b,935s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1043,10 +1040,10 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (10 pages, 228225 bytes).
+Output written on main.pdf (10 pages, 232406 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
+ 234 PDF objects out of 1000 (max. 8388607)
  184 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 37 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
