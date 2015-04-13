@@ -1,0 +1,30 @@
+% Completion of PH network (Circadian clock)
+
+\section{Completion of PH networks}
+
+\subsection{ Asynchronous and non-deterministic networks}
+
+\subsection{Algorithm}
+
+\begin{itemize}
+	\item INPUT:  a Process Hitting and a chronogram of the genes evolution.% and possible genes influences.
+
+	\item Step 1: Sample the chronogram for each gene at each time step.
+
+	\item Step 2: For each time step where a gene $G$ changes its value from $val$ to $val'$:
+
+	\begin{itemize}
+		\item[-] 2.1: Compute $D$, the delay since the last time a gene has changed.
+		\item[-] 2.2: Generate all actions with delay $D$ which involve all subsets of the genes $X_1, \ldots, X_n$ having an influence on $G$:
+		$$action(X_1,Val_1,\ldots, X_n,Val_n, G, val, val', D)$$
+	\end{itemize}
+
+	\item Step 3: For each action with the same hitters, $X_1,Val_1,\ldots, X_n,Val_n$ and the same target, $G, val, val'$, merge into one action where the delay is the average.
+	\item OUTPUT:  a completed Process Hitting that realize the chronogram.
+
+\end{itemize}
+
+%dire que les action du PH de base sont aussi merge dans le step 3. Et qu'elle peuvent etre donnee de base dans l'apprentissage
+% Dire que les influences doivent etre donnees, ou alors on genere toutes les influences possibles.
+
+

@@ -1,0 +1,15 @@
+\BOOKMARK [0][-]{chapter.1}{ASP methods for Network Completion for Time-Varying Genetic Networks}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Process Hitting }{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Circadian clock}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{Definition}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{Circadian clock in PH}{section.1.3}% 6
+\BOOKMARK [1][-]{section.1.4}{PH through ASP}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.4.1}{Translation of PH networks to ASP}{section.1.4}% 8
+\BOOKMARK [2][-]{subsection.1.4.2}{Circadian clock in ASP}{section.1.4}% 9
+\BOOKMARK [1][-]{section.1.5}{Completion of PH networks}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.5.1}{ Asynchronous and non-deterministic networks}{section.1.5}% 11
+\BOOKMARK [2][-]{subsection.1.5.2}{Algorithm}{section.1.5}% 12
+\BOOKMARK [1][-]{section.1.6}{Evaluation}{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.6.1}{Completion of circadian clock}{section.1.6}% 14
+\BOOKMARK [1][-]{section.1.7}{Conclusion and perspectives}{chapter.1}% 15

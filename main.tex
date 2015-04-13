@@ -1,0 +1,208 @@
+
+%%%%%%%%%%%%%%%%%%%%%%% file articleCAV.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Article à déposer pour CMSB 2015
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[runningheads,a4paper]{llncs}
+
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+
+%%%%%%%%%%%%%%%%%%%%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+
+
+\usepackage{amsmath}  % Maths
+\usepackage{amsfonts} % Maths
+\usepackage{amssymb}  % Maths
+\usepackage{stmaryrd} % Maths (crochets doubles)
+
+
+%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings}
+% Définition du langage ASP
+\lstdefinelanguage{ASP}{%
+literate={:-}{$\leftarrow$}1,
+morekeywords={not},
+numbers=left,
+escapeinside={\%}{\^^M}
+}
+
+% Définition des styles de tous les listings du document
+\lstset{language=ASP,
+basicstyle=\small,
+columns=flexible,
+keywordstyle=\bfseries,
+firstnumber=last
+}
+\renewcommand{\thelstnumber}{\the\value{lstnumber}}
+%% fin définition
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{enumerate} % Personnalisation de la numérotation des listes
+\usepackage{url}     % Mise en forme + liens pour URLs
+\usepackage{array}   % Tableaux évolués
+\usepackage{comment}
+
+\usepackage{prettyref}
+\newrefformat{def}{Definition~\ref{#1}}
+\newrefformat{fig}{Figure~\ref{#1}}
+\newrefformat{pro}{Property~\ref{#1}}
+\newrefformat{pps}{Proposition~\ref{#1}}
+\newrefformat{lem}{Lemma~\ref{#1}}
+\newrefformat{th}{Theorem~\ref{#1}}
+\newrefformat{sec}{Section~\ref{#1}}
+%\newrefformat{subsec}{Subsect.~\ref{#1}}
+\newrefformat{suppl}{Appendix~\ref{#1}}
+\newrefformat{eq}{Eq.~\eqref{#1}}
+\def\pref{\prettyref}
+
+
+\usepackage{tikz}
+\newdimen\pgfex
+\newdimen\pgfem
+\usetikzlibrary{arrows,shapes,shadows,scopes}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix}
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{decorations.pathmorphing}
+
+%\input{macros/macros}
+
+%%%%%
+% Macros générales
+\def\Pint{\textsc{PINT}}
+
+
+% Notations spécifiques à ce papier
+\newcommand{\PHdirectpredec}[1]{\PHs^{-1}(#1)}
+\newcommand{\PHpredec}[1]{\f{pred}(#1)}
+\newcommand{\PHpredecgene}[1]{\f{reg}({#1})}
+\newcommand{\PHpredeccs}[1]{\PHpredec{#1} \setminus \Gamma}
+
+\tikzstyle{boxed ph}=[]
+\tikzstyle{sort}=[fill=lightgray,rounded corners]
+\tikzstyle{process}=[circle,draw,minimum size=15pt,fill=white,
+font=\footnotesize,inner sep=1pt]
+\tikzstyle{black process}=[process, fill=black,text=white, font=\bfseries]
+\tikzstyle{gray process}=[process, draw=black, fill=lightgray]
+\tikzstyle{current process}=[process, draw=black, fill=lightgray]
+\tikzstyle{process box}=[white,draw=black,rounded corners]
+\tikzstyle{tick label}=[font=\footnotesize]
+\tikzstyle{tick}=[black,-]%,densely dotted]
+\tikzstyle{hit}=[->,>=angle 45]
+\tikzstyle{selfhit}=[min distance=30pt,curve to]
+\tikzstyle{bounce}=[densely dotted,->,>=latex]
+\tikzstyle{hl}=[font=\bfseries,very thick]
+\tikzstyle{hl2}=[hl]
+\tikzstyle{nohl}=[font=\normalfont,thin]
+
+
+\tikzstyle{aS}=[every edge/.style={draw,->,>=stealth}]
+\tikzstyle{Asol}=[draw,circle,minimum size=5pt,inner sep=0,node distance=1.5cm]
+\tikzstyle{Aproc}=[draw,node distance=1.2cm]
+\tikzstyle{Aobj}=[node distance=1.5cm]
+\tikzstyle{Anos}=[font=\Large]
+
+%\tikzstyle{AprocPrio}=[Aproc,double]
+\tikzstyle{AsolPrio}=[Asol,double]
+\tikzstyle{AprocPrio}=[Aproc,double]
+\tikzstyle{aSPrio}=[aS,double]
+
+% Commandes À FAIRE
+%\usepackage{color} % Couleurs du texte
+%\newcommand{\todo}[1]{\textcolor{red}{\textbf{[[#1]]}}}
+%\newcommand{\TODO}{\todo{TODO}}
+
+%%%%%
+% Id est
+%\newcommand{\ie}{\textit{i.e.} }
+\newcommand{\ie}{i.e.\ }
+\newcommand{\resp}{resp.\ }
+
+% Césures
+\hyphenation{pa-ra-me-tri-za-tion}
+\hyphenation{pa-ra-me-tri-za-tions}
+
+\input{macros/macros}
+\input{macros/macros-ph}
+\input{macros/tikzstyles2.tex}
+\input{macros/macros-abstr}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%% DEBUT ARTICLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{url}
+\urldef{\mailsa}\path|emna.ben-abdallah@irccyn.ec-nantes.fr|
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+
+\begin{document}
+
+\mainmatter  % start of an individual contribution
+
+% The title
+\title{Answer Set Programming Method for Network Completion for Time-Varying Genetic Networks modeled in Process Hitting}
+
+% a short form should be given in case it is too long for the running head
+\titlerunning{ASP Method for Network Completion for Time-Varying Genetic Networks}
+
+% the name(s) of the author(s) follow(s) next
+%
+% NB: Chinese authors should write their first names(s) in front of
+% their surnames. This ensures that the names appear correctly in
+% the running heads and the author index.
+%
+\author{Emna Ben Abdallah\inst{1} \and  Tony Ribeiro \inst{2}  \and Morgan Magnin \inst{1,2} \and Katsumi Inoue \inst{1}}
+%
+\authorrunning{E. Ben Abdallah, T. Ribeiro, M. Magnin, K. Inoue}
+% (feature abused for this document to repeat the title also on left hand pages)
+
+% the affiliations are given next; don't give your e-mail address
+% unless you accept that it will be published
+\institute{LUNAM Université, \'Ecole Centrale de Nantes,
+ IRCCyN UMR CNRS 6597\\ (Institut de Recherche en Communications et Cybern\'etique de Nantes),\\
+  1 rue de la Noë, 44321 Nantes, France.\\
+\and
+National Institute of Informatics, \\
+2-1-2, Hitotsubashi, Chiyoda-ku, Tokyo 101-8430, Japan.
+}
+
+%
+% NB: a more complex sample for affiliations and the mapping to the
+% corresponding authors can be found in the file "llncs.dem"
+% (search for the string "\mainmatter" where a contribution starts).
+% "llncs.dem" accompanies the document class "llncs.cls".
+%
+
+\toctitle{ASP methods for Network Completion for Time-Varying Genetic Networks}
+\tocauthor{Authors' Instructions}
+\maketitle
+
+
+\begin{abstract}
+
+IAlmost the models of biological networks are not robust and need some times to be revised and adapted to the new observations. A system maintains its func- tions against internal and external perturbations, leading to topological changes in the network with varying delays. To understand the resilient behaviour of biological networks, we propose novel methods. First we propose an approach to model a time- dependent asynchronous and non-deterministic networks through Process Hitting (PH) framework which is a new framework particularly suitable to model biological regulatory networks. Second we have developed a novel network completion algo- rithm for time-varying networks to analyse its behavior based on the framework of network completion. This completion aims to make the minimum amount of modifications to a given network so that the resulting network is most consistent with the observed data. We demonstrate the effectiveness of our proposed methods through computational experiments using synthetic gene expression data of the circadien clock network modeled through PH. The results indicate that our methods exhibit good performance in terms of completing and inferring gene association networks with time-varying structures.
+
+\keywords{Answer Set Programming, Process Hitting, time-varying genetic networks, network completion}
+
+\end{abstract}
+
+
+  \include{intro}
+  \include{processHitting}
+  \include{circadianClock}
+  \include{PH-ASP}
+   \include{completionPH}
+   \include{evaluation}
+  \include{concl}
+  
+  \bibliographystyle{plain}
+  \bibliography{biblio}
+    
+\end{document}
+

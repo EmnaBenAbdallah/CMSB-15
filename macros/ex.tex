@@ -1,0 +1,698 @@
+% Exemples
+
+%%% Exemple pour la définition du Process Hitting %%%
+\def \exphdef {
+\path[use as bounding box] (-0.5,-0.25) rectangle (6.5,4.75);
+
+\TSort{(0,3)}{a}{2}{l}
+\TSort{(0,0)}{b}{2}{l}
+\TSort{(6,1)}{z}{3}{r}
+
+\THit{a_1}{}{z_1}{.west}{z_2}
+\THit{b_1}{}{z_0}{.west}{z_1}
+\THit{a_0}{out=250,in=200,selfhit}{a_0}{.west}{a_1}
+
+\path[bounce,bend left]
+\TBounce{z_0}{}{z_1}{.south}
+\TBounce{z_1}{}{z_2}{.south}
+\TBounce{a_0}{}{a_1}{.south}
+;
+}
+
+
+
+%%% Exemple pour la coopération %%%
+\def \exphcoop {
+\path[use as bounding box] (-0.5,-0.5) rectangle (6.5,4.5);
+
+% Actions de màj grisées
+\only<7-8,10-11>{
+\THit{a_1}{ulhit,color=lightgray}{ab_0}{.west}{ab_2}
+\THit{a_1}{ulhit,color=lightgray}{ab_1}{.160}{ab_3}
+\path[bounce,bend left,pulhit] \TBounce{ab_0}{bulhit}{ab_2}{.240} \TBounce{ab_1}{bulhit}{ab_3}{.south west} ;
+}
+
+\only<8-8,10-11>{
+\THit{a_0}{ulhit}{ab_2}{.160}{ab_0}
+\THit{a_0}{ulhit}{ab_3}{.150}{ab_1}
+\path[bounce,bend right,pulhit] \TBounce{ab_2}{bulhit}{ab_0}{.north west} \TBounce{ab_3}{bulhit}{ab_1}{.120} ;
+}
+
+\only<10-11>{
+\THit{b_0}{ulhit}{ab_3}{.190}{ab_2}
+\THit{b_0}{ulhit}{ab_1}{.200}{ab_0}
+\THit{b_1}{ulhit}{ab_0}{.210}{ab_1}
+\THit{b_1}{ulhit}{ab_2}{.200}{ab_3}
+\path[bounce,bend right,pulhit] \TBounce{ab_1}{bulhit}{ab_0}{.north} \TBounce{ab_3}{bulhit}{ab_2}{.120} ;
+\path[bounce,bend left,pulhit] \TBounce{ab_0}{bulhit}{ab_1}{.240} \TBounce{ab_2}{bulhit}{ab_3}{.south} ;
+}
+
+% Sortes
+%\TSort{(0,3)}{a}{2}{l}
+%\TSort{(0,0)}{b}{2}{l}
+%\TSort{(6,1)}{z}{3}{r}
+\TSort{(0,3)}{a}{2}{l}
+\TSort{(0,0)}{b}{2}{l}
+\TSort{(7,1.5)}{z}{2}{r}
+
+% Deux actions disjointes en exemple
+\only<2-4>{
+\THit{a_1}{}{z_0}{.north west}{z_1}
+\path[bounce,bend left] \TBounce{z_0}{}{z_1}{.south} ;
+
+\only<3>{
+\THit{a_1}{hl}{z_0}{.north west}{z_1}
+\path[bounce,bend left,hl] \TBounce{z_0}{}{z_1}{.south} ;
+}
+
+\THit{b_1}{}{z_0}{.west}{z_1}
+\path[bounce,bend left=55] \TBounce{z_0}{}{z_1}{.south west} ;
+}
+
+% Processus d'exemple
+\TState{3}{a_1,b_0,z_0}
+\TState{4}{a_1,b_0,z_1}
+
+% Sorte coopérative et arcs
+\only<5->{
+\TSetTick{ab}{0}{00}
+\TSetTick{ab}{1}{01}
+\TSetTick{ab}{2}{10}
+\TSetTick{ab}{3}{11}
+%\TSort{(3,0.5)}{ab}{4}{l}
+\TSort{(4,0.5)}{ab}{4}{r}
+}
+
+
+
+% Actions de màj normales
+\only<9,12->{
+\THit{a_1}{}{ab_0}{.west}{ab_2}
+\THit{a_1}{}{ab_1}{.160}{ab_3}
+\path[bounce,bend left] \TBounce{ab_0}{}{ab_2}{.240} \TBounce{ab_1}{}{ab_3}{.south west} ;
+\THit{a_0}{}{ab_2}{.160}{ab_0}
+\THit{a_0}{}{ab_3}{.150}{ab_1}
+\path[bounce,bend right] \TBounce{ab_2}{}{ab_0}{.north west} \TBounce{ab_3}{}{ab_1}{.120} ;
+\THit{b_0}{}{ab_3}{.190}{ab_2}
+\THit{b_0}{}{ab_1}{.200}{ab_0}
+\THit{b_1}{}{ab_0}{.210}{ab_1}
+\THit{b_1}{}{ab_2}{.200}{ab_3}
+\path[bounce,bend right] \TBounce{ab_1}{}{ab_0}{.north} \TBounce{ab_3}{}{ab_2}{.120} ;
+\path[bounce,bend left] \TBounce{ab_0}{}{ab_1}{.240} \TBounce{ab_2}{}{ab_3}{.south} ;
+}
+
+% Actions de màj en gras de la sc
+\only<6>{
+\THit{a_1}{thick}{ab_0}{.west}{ab_2}
+\THit{a_1}{thick}{ab_1}{.160}{ab_3}
+\path[bounce,thick,bend left] \TBounce{ab_0}{thick}{ab_2}{.240} \TBounce{ab_1}{thick}{ab_3}{.south west} ;
+}
+
+\only<7>{
+\THit{a_0}{thick}{ab_2}{.160}{ab_0}
+\THit{a_0}{thick}{ab_3}{.150}{ab_1}
+\path[bounce,thick,bend right] \TBounce{ab_2}{thick}{ab_0}{.north west} \TBounce{ab_3}{thick}{ab_1}{.120} ;
+}
+
+\only<8>{
+\THit{b_0}{thick}{ab_3}{.190}{ab_2}
+\THit{b_0}{thick}{ab_1}{.200}{ab_0}
+\THit{b_1}{thick}{ab_0}{.210}{ab_1}
+\THit{b_1}{thick}{ab_2}{.200}{ab_3}
+\path[bounce,thick,bend right] \TBounce{ab_1}{thick}{ab_0}{.north} \TBounce{ab_3}{thick}{ab_2}{.120} ;
+\path[bounce,thick,bend left] \TBounce{ab_0}{thick}{ab_1}{.240} \TBounce{ab_2}{thick}{ab_3}{.south} ;
+}
+
+% État d'exemple pour màj de la sc
+%\TState{8-9}{a_1,b_1}
+%\TState{10}{a_1,b_1,ab_0,ab_1,ab_2,ab_3}
+%\TState{11}{a_1,b_1,ab_3}
+%\only<9-11>{
+%\THit{a_1}{}{ab_0}{.west}{ab_2}
+%\THit{a_1}{}{ab_1}{.160}{ab_3}
+%\THit{b_1}{}{ab_0}{.210}{ab_1}
+%\THit{b_1}{}{ab_2}{.200}{ab_3}
+%\path[bounce,bend left] \TBounce{ab_0}{}{ab_2}{.240} \TBounce{ab_1}{}{ab_3}{.south west} ;
+%\path[bounce,bend left] \TBounce{ab_0}{}{ab_1}{.240} \TBounce{ab_2}{}{ab_3}{.south} ;
+%}
+
+% État d'exemple pour action de la sc
+\TState{13}{a_1,b_1,z_0,ab_3}
+\TState{14-}{a_1,b_1,z_1,ab_3}
+
+% Arc sortant de la sc
+\only<13->{
+\THit{ab_3}{thick}{z_0}{.west}{z_1}
+\path[bounce,bend left,thick] \TBounce{z_0}{thick}{z_1}{.south} ;
+}
+
+% Arc sortant de la sc
+%\only<15->{
+%\THit{ab_2}{}{z_1}{.west}{z_2}
+%\path[bounce,bend left] \TBounce{z_1}{}{z_2}{.south} ;
+%}
+
+}
+
+
+
+%%% Exemple pour la coopération avec et sans priorités %%%
+\def\exphcoopprio#1#2{
+%\path[use as bounding box] (-0.5,-0.5) rectangle (6.5,4.5);
+
+% Sortes
+\TSort{(0,3)}{a}{2}{l}
+\TSort{(0,0)}{b}{2}{l}
+\TSort{(7,1.5)}{z}{2}{r}
+% Sorte coopérative
+\TSetTick{ab}{0}{00}
+\TSetTick{ab}{1}{01}
+\TSetTick{ab}{2}{10}
+\TSetTick{ab}{3}{11}
+\TSort{(4,0.5)}{ab}{4}{r}
+
+\ifthenelse{\equal{#2}{abstr}}{
+% Abstraction de la màj de la sc
+\path[#1,update] (0,3.5) -- (4,2.7) ;
+\path[#1,update] (0,0.5) -- (4,1.3) ;
+}{
+% Actions de màj de la sc
+\THit{a_1}{#1}{ab_0}{.west}{ab_2}
+\THit{a_1}{#1}{ab_1}{.160}{ab_3}
+\path[bounce,bend left] \TBounce{ab_0}{}{ab_2}{.240} \TBounce{ab_1}{}{ab_3}{.south west} ;
+\THit{a_0}{#1}{ab_2}{.160}{ab_0}
+\THit{a_0}{#1}{ab_3}{.150}{ab_1}
+\path[bounce,bend right] \TBounce{ab_2}{}{ab_0}{.north west} \TBounce{ab_3}{}{ab_1}{.120} ;
+\THit{b_0}{#1}{ab_3}{.190}{ab_2}
+\THit{b_0}{#1}{ab_1}{.200}{ab_0}
+\THit{b_1}{#1}{ab_0}{.210}{ab_1}
+\THit{b_1}{#1}{ab_2}{.200}{ab_3}
+\path[bounce,bend right] \TBounce{ab_1}{}{ab_0}{.north} \TBounce{ab_3}{}{ab_2}{.120} ;
+\path[bounce,bend left] \TBounce{ab_0}{}{ab_1}{.240} \TBounce{ab_2}{}{ab_3}{.south} ;
+}
+
+%Actions entre a et b
+\THit{a_1}{selfhit}{a_1}{.west}{a_0}
+\THit{b_1}{selfhit}{b_1}{.west}{b_0}
+\THit{a_0}{bend right=50}{b_0}{.west}{b_1}
+\THit{b_0.south west}{bend left=90}{a_0}{.west}{a_1}
+\path[bounce,bend right] \TBounce{a_1}{}{a_0}{.north west} \TBounce{b_1}{}{b_0}{.north west} ;
+\path[bounce,bend left] \TBounce{a_0}{}{a_1}{.south west} \TBounce{b_0}{}{b_1}{.south west} ;
+
+% Arc sortant de la sc
+\THit{ab_3}{}{z_0}{.west}{z_1}
+\path[bounce,bend left] \TBounce{z_0}{}{z_1}{.south} ;
+}
+
+
+
+%%% Structure abstraite pour l'atteignabilité avec priorités %%%
+\def \priostatic {
+\node[Aproc] (z1) {$z_1$};
+\node[Aobj,right of=z1] (z01) {$\PHobj{z_0}{z_1}$};
+\node[Asol,right of=z01] (z01s) {};
+
+\node[Aproc,right of=z01s] (ab11) {$ab_{11}$};
+\node[Asol,right of=ab11] (ab11s) {};
+
+\node[Aproc,above right of=ab11s] (a1) {$a_1$};
+\node[Aobj,above right of=a1] (a11) {$\PHobj{a_1}{a_1}$};
+\node[Asol,right of=a11] (a11s) {};
+\node[Aobj,right of=a1] (a01) {$\PHobj{a_0}{a_1}$};
+\node[Asol,right of=a01] (a01s) {};
+\node[Aproc,right of=a01s] (b0) {$b_0$};
+\node[Aobj,right of=b0] (b00) {$\PHobj{b_0}{b_0}$};
+\node[Asol,right of=b00] (b00s) {};
+\node[Aobj,above right of=b0] (b10) {$\PHobj{b_1}{b_0}$};
+\node[Asol,right of=b10] (b10s) {};
+
+\node[Aproc,below right of=ab11s] (b1) {$b_1$};
+\node[Aobj,below right of=b1] (b11) {$\PHobj{b_1}{b_1}$};
+\node[Asol,right of=b11] (b11s) {};
+\node[Aobj,right of=b1] (b01) {$\PHobj{b_0}{b_1}$};
+\node[Asol,right of=b01] (b01s) {};
+\node[Aproc,right of=b01s] (a0) {$a_0$};
+\node[Aobj,right of=a0] (a00) {$\PHobj{a_0}{a_0}$};
+\node[Asol,right of=a00] (a00s) {};
+\node[Aobj,below right of=a0] (a10) {$\PHobj{a_1}{a_0}$};
+\node[Asol,right of=a10] (a10s) {};
+
+\path
+(z1) edge (z01)
+(z01) edge (z01s)
+(z01s) edge (ab11)
+(ab11) edge[aSPrio] (ab11s)
+(ab11s) edge (a1) edge (b1)
+
+(a1) edge (a01) edge (a11)
+(a01) edge (a01s)
+(a01s) edge (b0)
+(a11) edge (a11s)
+(a0) edge (a10) edge (a00)
+(a10) edge (a10s)
+(a00) edge (a00s)
+
+(b0) edge (b10) edge (b00)
+(b10) edge (b10s)
+(b00) edge (b00s)
+(b1) edge (b01) edge (b11)
+(b01) edge (b01s)
+(b01s) edge (a0)
+(b11) edge (b11s)
+;
+}
+
+
+
+% Légende pour les GLC
+\newcommand{\lvalign}{1 cm}   % Coordinnée X des nœuds
+\newcommand{\lvalignl}{2 cm}  % Coordonnée X des légendes
+\newcommand{\lhfirst}{3 cm}   % Coordonnée Y du premier élément
+\newcommand{\lhsep}{.7 cm}    % Sépérateur Y de chaque élément
+\tikzstyle {llegend}=[anchor=west,align=left]
+\tikzstyle {legendbox}=[rounded corners,thick,draw=couleurtheme]
+
+\def \glclegend#1#2#3{
+  \node[Aproc] at (\lvalign,\lhfirst) (exproc) {#2};
+  \node[Aobj] at (\lvalign,\lhfirst-\lhsep) (exobj) {#3};
+  \node[Asol] at (\lvalign,\lhfirst-2*\lhsep) (exsol) {};
+
+  \node[llegend] at (\lvalignl,\lhfirst) {Required process};
+  \node[llegend] at (\lvalignl,\lhfirst-\lhsep) {Objective};
+  \node[llegend] at (\lvalignl,\lhfirst-2*\lhsep) {Solution to an objective};
+
+  \ifthenelse{\equal{#1}{prio}}{%
+    \node[Aproc] at (\lvalign-.3cm,\lhfirst-3*\lhsep) (aprio1) {$ab_{11}$};
+    \node[Asol] at (\lvalign+.7cm,\lhfirst-3*\lhsep) (aprio2) {};
+    \path (aprio1) edge[aSPrio] (aprio2);
+    \node[llegend] at (\lvalignl,\lhfirst-3*\lhsep) {\phantom{Mg}\\Solution to a prioritised\\cooperative sort process};
+    \path[legendbox] (0,0) rectangle (6,3.6);
+  }{%
+    \path[legendbox] (0,1) rectangle (6,3.6);
+  }
+}
+
+
+
+%%% Exemple atteignabilité
+\def \exatt {
+\TSort{(0,0)}{a}{2}{l}
+\TSort{(3,0)}{b}{3}{l}
+\TSort{(6,0)}{d}{3}{r}
+\TSort{(2,-2)}{c}{2}{b}
+
+\THit{a_0}{}{c_0}{.north}{c_1}
+\THit{a_1}{}{b_1}{.west}{b_0}
+\THit{c_1}{bend left=20pt}{b_0}{.west}{b_1}
+\THit{b_1.south west}{->}{a_0}{.east}{a_1}
+\THit{b_0}{}{d_0}{.west}{d_1}
+\THit{b_1}{}{d_1}{.west}{d_2}
+\THit{d_1}{}{b_0}{.north east}{b_2}
+\THit{c_1}{bend right=80pt,distance=80pt}{d_1}{.east}{d_0}
+\THit{b_2}{distance=120pt,out=30,in=40}{d_0}{.east}{d_2}
+
+\path[bounce,bend left]
+\TBounce{d_0}{}{d_1}{.south}
+\TBounce{d_1}{}{d_2}{.south}
+\TBounce{c_0}{}{c_1}{.west}
+\TBounce{b_0}{}{b_1}{.south}
+\TBounce{d_1}{}{d_0}{.north}
+;
+\path[bounce,bend right]
+\TBounce{a_0}{}{a_1}{.south}
+\TBounce{b_0}{}{b_2}{.south}
+\TBounce{b_1}{}{b_0}{.north}
+\TBounce{d_0}{bend right=50pt,distance=40pt}{d_2}{.south}
+;
+}
+
+
+
+%%% Figure de présentation de l'analyse d'atteignabilité
+\def \figsa {
+\begin{tikzpicture}
+\path[use as bounding box] (-7,-3.3) rectangle (6.3,3);
+\definecolor{r2}{RGB}{238,10,38}
+
+\path<2->[shading=1, inner color=r2, outer color=white] (3.5,-2.8) -- (4.4,3.2) -- (0,3) -- (-4.5,1.4) -- (-2.5,-2.5) -- (0,-3.6) -- (2.8,-2.8);
+%\path<2->[shading, inner color=r2, outer color=white, border color=white] (2.8,-2.8) -- (4.5,4.5) -- (0,3.9) -- (-4.5,1.8) -- (-5,-3) -- (0,-3.2) -- (2.8,-2.8);
+\draw<2->[thick,fill=white] (2.5,-2.1) -- (3,2.5) -- (-2.7,1.3) -- (-2,-2) -- (2.5,-2.1);
+\draw<6->[thick,fill=lightyellow] (2.5,-2.1) -- (3,2.5) -- (-2.7,1.3) -- (-2,-2) -- (2.5,-2.1);
+
+\node<2->[text width=3.5cm, color=red] (s1) at (-5,2) {Over-Approximation};
+\path<2->[->,very thick,color=red] (s1.south) edge (-3.5,1.2);
+%\node<2->[text width=3cm,color=black] (i1) at (3.7,.2) {$\Rightarrow$};
+\node<2->[text width=3cm,color=black] (q) at (4.5,.2) {$\neg Q$};
+
+%\draw<4->[thick, fill=green] (.5,-.8) -- (1,0) -- (.3,1) -- (-1,.5) -- (-.5,-.5) -- (.5,-.8);
+\draw<4->[thick, shading=1, top color=darkgreen, bottom color=green] (.5,-.8) -- (1,0) -- (.3,1) -- (-1,.5) -- (-.5,-.5) -- (.5,-.8);
+\node<4->[text width=3.5cm,color=darkgreen] (s2) at (5.2,-1.5) {Under-Approximation};
+\node<4->[text width=3cm,color=black] (p) at (1.8,.2) {$P$};
+%\node<4->[text width=3cm,color=black] (i1) at (2.25,.2) {$\Rightarrow$};
+
+% reaching set
+\node[text width=3cm,color=darkcyan] (s) at (1.8,1.7) {Exact solutions};
+\node<1->[text width=3cm,color=darkcyan] (s0) at (0,0) {};
+\draw[color=darkcyan,very thick] (0,0) ellipse (2 and 1.5);
+%\path<1>[draw=white] (2.8,-2.8) -- (4.5,4.5) -- (0,3.9) -- (-4.5,1.8) -- (-5,-3) -- (-2.5,-3.5) -- (0,-3.2) -- (2.8,-2.8);
+\node[text width=3cm,color=black] (r) at (2.8,.2) {$R$};
+
+\path<4->[->,very thick,color=darkgreen] (s2) edge (.6,-.4);
+
+\tikzstyle{point}=[circle,draw=red,fill=red,minimum size=5pt,inner sep=0pt]
+
+%\only<5->{
+\only<3->{
+\node[point] at (-2.4,-2) {};
+\node[point] at (-2,2) {};
+}
+\only<5->{
+\node[point] at (0,0) {};
+}
+\only<7->{
+\node[point] at (-.5,-1.1) {};
+\node[point] at (2.5,1) {};
+}
+%}
+
+\end{tikzpicture}
+}
+
+
+
+%%% Exemples de graphes d'atteignabilité
+
+% Structure abstraite / Sous-approximation / Ok
+\def \sauyes {%
+\begin{tikzpicture}[aS,node distance=1.1cm]
+%\path[use as bounding box] (-0.5,-2.1) rectangle (10.25,2.2);
+
+\node[Aobj] (d02) {$\PHobjectif{d_0}{d_2}$};
+\node[Aproc,above of=d02] (d2) {$d_2$};
+
+\node[Asol,right of=d02] (d02s2) {};
+\node[Aproc,above right of=d02s2] (b0) {$b_0$};
+\node[Aobj,right of=b0] (b10) {$\PHobjectif{b_1}{b_0}$};
+\node[Asol,right of=b10] (b10s) {};
+\node[Aproc,right of=b10s,node distance=.9cm] (a1) {$a_1$};
+\node[Aobj,right of=a1,node distance=1.3cm] (a11) {$\PHobjectif{a_1}{a_1}$};
+\node[Asol,right of=a11] (a11s) {};
+
+\node[Aobj,above of=b10,yshift=-0.5cm] (b00)
+{$\PHobjectif{b_0}{b_0}$};
+\node[Asol,right of=b00] (b00s) {};
+
+\node[Aproc, below of=b0] (b1) {$b_1$};
+\node[Aobj,right of=b1] (b11) {$\PHobjectif{b_1}{b_1}$};
+\node[Asol,right of=b11] (b11s) {};
+\node[Aobj,below of=b11] (b01) {$\PHobjectif{b_0}{b_1}$};
+\node[Asol,right of=b01] (b01s) {};
+\node[Aproc,right of=b01s,node distance=.9cm] (c1) {$c_1$};
+\node[Aobj,right of=c1,node distance=1.3cm] (c11) {$\PHobjectif{c_1}{c_1}$};
+\node[Asol,right of=c11] (c11s) {};
+
+\path
+(d02) edge (d02s2) (d02s2) edge (b1) edge (b0)
+(a11) edge (a11s)
+(b10) edge (b10s) (b10s) edge (a1)
+(b11) edge (b11s)
+(b0) edge (b10) (b1) edge (b11)
+(a1) edge (a11)
+(d2) edge (d02)
+;
+\path
+(b0) edge (b00.west) (b00) edge (b00s)
+(b1) edge (b01)
+(b01) edge (b01s) (b01s) edge (c1)
+(c1) edge (c11) (c11) edge (c11s)
+;
+%\node<\tu>[right of=a11s] {\textbf{\Large\color{darkgreen}Yes}};
+\end{tikzpicture}%
+}
+
+% Structure abstraite / Sous-approximation / Inconclusif
+\def \sauinconc {%
+\begin{tikzpicture}[aS,node distance=1.1cm]
+%\path[use as bounding box] (-0.5,-2.1) rectangle (10.25,2.2);
+
+\node[Aobj] (d02) {$\PHobjectif{d_0}{d_2}$};
+\node[Aproc,above of=d02] (d2) {$d_2$};
+
+\node[Asol,right of=d02] (d02s2) {};
+\node[Aproc,above right of=d02s2] (b0) {$b_0$};
+\node[Aobj,right of=b0] (b10) {$\PHobjectif{b_1}{b_0}$};
+\node[Asol,right of=b10] (b10s) {};
+\node[Aproc,right of=b10s] (a1) {$a_1$};
+\node[Aobj,right of=a1] (a01) {$\PHobjectif{a_0}{a_1}$};
+\node[Asol,right of=a01] (a01s) {};
+
+\node[Aproc, below of=b0] (b1) {$b_1$};
+\node[Aobj,right of=b1] (b11) {$\PHobjectif{b_1}{b_1}$};
+\node[Asol,right of=b11] (b11s) {};
+\node[Aobj,below of=b11] (b01) {$\PHobjectif{b_0}{b_1}$};
+\node[Asol,right of=b01] (b01s) {};
+\node[Aproc,right of=b01s] (c1) {$c_1$};
+\node[Aobj,right of=c1] (c01) {$\PHobjectif{c_0}{c_1}$};
+\node[Asol,right of=c01] (c01s) {};
+\node[Aproc,right of=c01s] (a0) {$a_0$};
+\node[Aobj,right of=a0] (a00) {$\PHobjectif{a_0}{a_0}$};
+\node[Asol,right of=a00] (a00s) {};
+
+\node[Aobj,above of=b10] (b00) {$\obj{b_0}{b_0}$};
+\node[Asol,right of=b00] (b00s) {};
+\node[Aobj,above of=a01] (a11) {$\obj{a_1}{a_1}$};
+\node[Asol,right of=a11] (a11s) {};
+\node[Aobj,above of=c01] (c11) {$\obj{c_1}{c_1}$};
+\node[Asol,right of=c11] (c11s) {};
+\node[Aobj,above of=a00] (a10) {$\PHobjectif{a_1}{a_0}$};
+\node at (a10.east) {\Large\color{red}\textbf{$\bot$}};
+
+\path
+  (b10) edge[loop,min distance=5mm] (b10)
+ ;
+\path
+(d02) edge (d02s2) (d02s2) edge (b1) edge (b0)
+(a01) edge (a01s) (a01s.south) edge (b1.north east)
+(b10) edge (b10s) (b10s) edge (a1)
+(b11) edge (b11s)
+(a1) edge (a01)
+(b0) edge (b10) (b1) edge (b11)
+(d2) edge (d02)
+;
+\path
+(b00) edge (b00s)
+(b0) edge (b00)
+ (b1) edge (b01)
+ (b01) edge (b01s) (b01s) edge (c1)
+ (c1) edge (c01)
+ (c01) edge (c01s) (c01s) edge (a0)
+ (a0) edge (a00) (a00) edge (a00s)
+;
+\path
+ (c1) edge (c11) (c11) edge (c11s)
+(a0) edge (a10)
+(a1) edge (a11)
+(a11) edge (a11s)
+;
+
+%\node[right of=a01s] {\textbf{\Large\color{darkyellow}Inconc}};
+
+\end{tikzpicture}%
+}
+
+% Structure abstraite / Sur-approximation / Non
+\def \saono {%
+\begin{tikzpicture}[aS,node distance=1.1cm]
+%\path[use as bounding box] (-0.5,-2.1) rectangle (10.25,1.15);
+
+\node[Aobj] (d12) {$\PHobjectif{d_1}{d_2}$};
+\node[Aproc, above of=d12, node distance=1.5cm] (d2) {$d_2$};
+\node[Asol,above right of=d12] (d12s1) {};
+\node[Aproc, right of=d12s1] (b2) {$b_2$};
+\node[Aobj,right of=b2] (b02) {$\PHobjectif{b_0}{b_2}$};
+\node[Asol,right of=b02] (b02s) {};
+\node[Aproc,right of=b02s] (d1) {$d_1$};
+\node[Aobj,right of=d1] (d11) {$\PHobjectif{d_1}{d_1}$};
+\node[Asol,right of=d11] (d11s) {};
+
+\node[Asol,below right of=d12] (d12s2) {};
+\node[Aproc, right of=d12s2] (b1) {$b_1$};
+\node[Aobj,right of=b1] (b01) {$\PHobjectif{b_0}{b_1}$};
+\node[Asol,right of=b01] (b01s) {};
+\node[Aproc,right of=b01s] (c1) {$c_1$};
+\node[Aobj,right of=c1] (c01) {$\PHobjectif{c_0}{c_1}$};
+\node[Asol,right of=c01] (c01s) {};
+\node[Aproc,right of=c01s] (a0) {$a_0$};
+\node[Aobj,right of=a0] (a10) {$\PHobjectif{a_1}{a_0}$};
+\node at (a10.east) {\Large\color{red}\textbf{$\bot$}};
+
+\path
+(d2) edge (d12)
+(d12) edge (d12s1) edge (d12s2) (d12s1) edge (b2) edge (c1) (d12s2) edge (b1)
+(b01) edge (b01s) (b01s) edge (c1)
+(b02) edge (b02s) (b02s) edge (d1)
+(c01) edge (c01s) (c01s) edge (a0)
+(d11) edge (d11s)
+(a0) edge (a10)
+(b1) edge (b01)
+(b2) edge (b02)
+(c1) edge (c01)
+(d1) edge (d11)
+;
+%\only<\value{anim1}>{ \node[above right of=c01s] {\textbf{\Large\color{red}No}};}
+\end{tikzpicture}%
+}
+
+% Structure abstraite / Sur-approximation / Inconclusif
+\def \saoinconc {%
+\begin{tikzpicture}[aS,node distance=1.1cm]
+%\path[use as bounding box] (-0.5,-2.1) rectangle (10.25,1.15);
+
+\node[Aobj] (d02) {$\PHobjectif{d_0}{d_2}$};
+\node[Aproc, left of=d02, node distance=1.5cm] (d2) {$d_2$};
+\node[Asol,above right of=d02] (d02s1) {};
+
+\node[Aproc, right of=d02s1] (b2) {$b_2$};
+\node[Aobj,right of=b2] (b12) {$\PHobjectif{b_1}{b_2}$};
+\node[Asol,right of=b12] (b12s) {};
+\node[Aproc,right of=b12s] (d1) {$d_1$};
+\node[Aobj,right of=d1] (d01) {$\PHobjectif{d_0}{d_1}$};
+\node[Asol,right of=d01] (d01s) {};
+
+\node[Asol,below right of=d02] (d02s2) {};
+\node[Aproc, right of=d02s2] (b0) {$b_0$};
+%\node<\tokp>[orange, thick, Aproc, right of=d02s2] (b0) {$b_0$};
+\node[Aobj,right of=b0] (b10) {$\PHobjectif{b_1}{b_0}$};
+\node[Asol,right of=b10] (b10s) {};
+\node[Aproc,right of=b10s] (a1) {$a_1$};
+%\node<\tokp>[orange, thick, Aproc,right of=b10s] (a1) {$a_1$};
+\node[Aobj,right of=a1] (a11) {$\PHobjectif{a_1}{a_1}$};
+\node[Asol,right of=a11] (a11s) {};
+
+\node[Aproc, below of=b0] (b1) {$b_1$};
+\node[Aobj,right of=b1] (b11) {$\PHobjectif{b_1}{b_1}$};
+\node[Asol,right of=b11] (b11s) {};
+
+\path
+(d2) edge (d02)
+(d02) edge (d02s1) edge (d02s2) (d02s1) edge (b2) (d02s2) edge (b1) edge (b0)
+(a11) edge (a11s)
+(b10) edge (b10s) (b10s) edge (a1)
+(b11) edge (b11s)
+(b12) edge (b12s) (b12s) edge (d1) edge (a1)
+(d01) edge (d01s) (d01s.south) edge (b0)
+(a1) edge (a11)
+(b0) edge (b10) (b1) edge (b11) (b2) edge (b12)
+(d1) edge (d01)
+;
+%\node[below right of=d01s] {\textbf{\Large\color{yellow}Inconc}};
+\end{tikzpicture}%
+}
+
+
+
+% Structure abstraite / Sur-approximation / Inconclusif / Avec processus-clefs
+\def \saoinconckp {%
+\begin{tikzpicture}[aS,node distance=1.1cm]
+%\path[use as bounding box] (-0.5,-2.1) rectangle (10.25,1.15);
+
+\node[Aobj] (d02) {$\PHobjectif{d_0}{d_2}$};
+\node[Aproc, left of=d02, node distance=1.5cm] (d2) {$d_2$};
+\node[Asol,above right of=d02] (d02s1) {};
+
+\node[Aproc, right of=d02s1] (b2) {$b_2$};
+\node[Aobj,right of=b2] (b12) {$\PHobjectif{b_1}{b_2}$};
+\node[Asol,right of=b12] (b12s) {};
+\node[Aproc,right of=b12s] (d1) {$d_1$};
+\node[Aobj,right of=d1] (d01) {$\PHobjectif{d_0}{d_1}$};
+\node[Asol,right of=d01] (d01s) {};
+
+\node[Asol,below right of=d02] (d02s2) {};
+\node<-2,4->[Aproc, right of=d02s2] (b0) {$b_0$};
+\node<3>[orange, thick, Aproc, right of=d02s2] (b0) {$b_0$};
+\node[Aobj,right of=b0] (b10) {$\PHobjectif{b_1}{b_0}$};
+\node[Asol,right of=b10] (b10s) {};
+\node<-2,4->[Aproc,right of=b10s] (a1) {$a_1$};
+\node<3>[orange, thick, Aproc,right of=b10s] (a1) {$a_1$};
+\node[Aobj,right of=a1] (a11) {$\PHobjectif{a_1}{a_1}$};
+\node[Asol,right of=a11] (a11s) {};
+
+\node[Aproc, below of=b0] (b1) {$b_1$};
+\node[Aobj,right of=b1] (b11) {$\PHobjectif{b_1}{b_1}$};
+\node[Asol,right of=b11] (b11s) {};
+
+\path
+(d2) edge (d02)
+(d02) edge (d02s1) edge (d02s2) (d02s1) edge (b2) (d02s2) edge (b1) edge (b0)
+(a11) edge (a11s)
+(b10) edge (b10s) (b10s) edge (a1)
+(b11) edge (b11s)
+(b12) edge (b12s) (b12s) edge (d1) edge (a1)
+(d01) edge (d01s) (d01s.south) edge (b0)
+(a1) edge (a11)
+(b0) edge (b10) (b1) edge (b11) (b2) edge (b12)
+(d1) edge (d01)
+;
+
+\uncover<3>{
+\node[orange, font=\bfseries,below of=a11s] (kp) {Key processes};
+\path[orange, thick]
+        (kp) edge (a1)
+        (kp) edge (b0)
+;}
+%\node[below right of=d01s] {\textbf{\Large\color{yellow}Inconc}};
+
+\node<4->[font=\Huge,red] at (a1) {X};
+
+\end{tikzpicture}%
+}
+
+
+
+% Exemple pour l'inférence
+
+\def \exphinfblack #1 {
+% Sortes
+\TSort{(0,3)}{a}{2}{l}
+\TSort{(0,0)}{b}{2}{l}
+\TSort{(6,0)}{z}{3}{r}
+
+% Sorte coopérative et arcs
+\TSetTick{ab}{0}{00}
+\TSetTick{ab}{1}{01}
+\TSetTick{ab}{2}{10}
+\TSetTick{ab}{3}{11}
+\TSort{(3,0)}{ab}{4}{l}
+
+% Actions de màj grisées
+\THit{a_1}{#1}{ab_0}{.west}{ab_2}
+\THit{a_1}{#1}{ab_1}{.west}{ab_3}
+\path[bounce,bend left] \TBounce{ab_0}{}{ab_2}{.south} \TBounce{ab_1}{}{ab_3}{.south};
+
+\THit{a_0}{#1}{ab_2}{.west}{ab_0}
+\THit{a_0}{#1}{ab_3}{.west}{ab_1}
+\path[bounce,bend right] \TBounce{ab_2}{}{ab_0}{.north} \TBounce{ab_3}{}{ab_1}{.north};
+
+\THit{b_0}{#1}{ab_3}{.west}{ab_2}
+\THit{b_0}{#1}{ab_1}{.west}{ab_0}
+\THit{b_1}{#1}{ab_0}{.west}{ab_1}
+\THit{b_1}{#1}{ab_2}{.west}{ab_3}
+\path[bounce,bend right] \TBounce{ab_1}{}{ab_0}{.north} \TBounce{ab_3}{}{ab_2}{.north};
+\path[bounce,bend left] \TBounce{ab_0}{}{ab_1}{.south} \TBounce{ab_2}{}{ab_3}{.south};
+
+% Arcs sortant de la sc
+\THit{ab_2}{}{z_1}{.north west}{z_2}
+\THit{ab_2}{}{z_0}{.west}{z_1}
+\path[bounce,bend left] \TBounce{z_1}{}{z_2}{.south} \TBounce{z_0}{}{z_1}{.south};
+
+\THit{ab_3}{}{z_2}{.west}{z_1}
+\THit{ab_3}{}{z_0}{.west}{z_1}
+\THit{ab_1}{}{z_2}{.west}{z_1}
+\THit{ab_1}{}{z_0}{.west}{z_1}
+\path[bounce,bend left] \TBounce{z_2}{,bend right}{z_1}{.north};
+
+\THit{ab_0}{}{z_2}{.west}{z_1}
+\THit{ab_0}{}{z_1}{.south west}{z_0}
+\path[bounce,bend right] \TBounce{z_2}{}{z_1}{.north} \TBounce{z_1}{}{z_0}{.north};
+
+}

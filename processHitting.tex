@@ -1,0 +1,196 @@
+% Process Hitting
+
+
+\section{Process Hitting }
+
+Definition \ref{def:PH} introduces the Process Hitting(PH) \cite{PMR10-TCSB}
+which allows to model a finite number of local levels,
+called \emph{processes},
+grouped into a finite set of components, called \emph{sorts}.
+A process is noted $a_i$, where $a$ is the sort's name,
+and $i$ is the process identifier within sort $a$.
+At any time, exactly one process of each sort is \emph{active},
+and the set of active processes is called a \emph{state}.
+
+The concurrent interactions between processes are defined by a set of \emph{actions}.
+Each action is responsible for the replacement of one process by another of the same sort
+conditioned by the presence of at most one other process in the current state.
+An action is denoted by $\PHfrappe{a_i}{b_j}{b_k}$, which is read as
+“$a_i$ \emph{hits} $b_j$ to make it \emph{bounce} to $b_k$”,
+where $a_i$, $b_j$, $b_k$ are processes of sorts $a$ and $b$,
+called respectively \emph{hitter}, \emph{target} and
+\emph{bounce} of the action.
+We also call a \emph{self-hit} any action whose hitter and target sorts are the same,
+that is, of the form: $\PHfrappe{a_i}{a_i}{a_k}$.
+
+The PH is therefore a restriction of synchronous automata, where each transition
+changes the local state of exactly one automaton,
+and is triggered by the local states of at most two distinct automata.
+This restriction in the form of the actions was chosen to permit
+the development of efficient static analysis methods
+based on abstract interpretation \cite{PMR12-MSCS}.
+
+\begin{definition}[Process Hitting]\label{def:PH}
+  A \emph{Process Hitting} is a triple $(\PHs,\PHl,\PHa)$ where:
+  \begin{itemize}
+    \item  $\PHs = \{a,b,\dots\}$ is the finite set of \emph{sorts};
+    \item  $\PHl = \prod_{a\in\PHs} \PHl_a$ is the set of \emph{states} where
+      $\PHl_a = \{a_0,\dots,a_{l_a}\}$
+      is the finite set of \emph{processes} of sort $a\in\Sigma$
+      and $l_a$ is a positive integer, with $a\neq b\Rightarrow \PHl_a \cap \PHl_b = \emptyset$;
+    \item  $\PHa = \{ \PHfrappe{a_i}{b_j}{b_k} \in \PHl_a \times \PHl_b^2 \mid
+      (a,b) \in \PHs^2 \wedge b_j\neq b_k \wedge a=b\Rightarrow a_i=b_j\}$
+      is the finite set of \emph{actions}.
+  \end{itemize}
+\end{definition}
+
+\begin{example}
+The figure \ref{fig:ph} represents a $\PH$ $(\PHs,\PHl,\PHa)$ with three sorts
+($\PHs = \{a, b, c\}$) and:
+$\PHl_a = \{a_0, a_1\}$,
+$\PHl_b = \{b_0, b_1\}$,
+$\PHl_z = \{z_0, z_1, z_2\}$.
+\begin{figure}[ht]
+\label{fig:ph} 
+\centering
+\begin{tikzpicture}%[font=\scriptsize]
+%\path[use as bounding box] (0,-1) rectangle (4,4);
+
+\TSort{(0,0)}{z}{3}{l}
+\TSort{(2,4)}{b}{2}{t}
+\TSort{(4,1)}{a}{2}{r}
+\THit{b_0}{}{z_1}{.east}{z_2}
+\THit{b_1}{}{z_0}{.north east}{z_2}
+\THit{a_0}{}{b_1}{.south}{b_0}
+\THit{a_1}{out=60,in=0,selfhit}{a_1}{.east}{a_0}
+
+\path[bounce,bend right]
+\TBounce{z_1}{}{z_2}{.south}
+\TBounce{z_0}{bend right=50}{z_2}{.south east}
+;
+\path[bounce,bend left]
+\TBounce{a_1}{}{a_0}{.north}
+\TBounce{b_1}{}{b_0}{.south}
+;
+
+ \THit{z_0}{}{a_0}{.west}{a_1} 
+
+\path[bounce,bend left]
+\TBounce{a_0}{}{a_1}{.south}
+;
+\TState{a_0,b_0,z_1}
+\end{tikzpicture}
+\caption{
+A PH model example with three sorts: $a$, $b$ and $z$ ($a$ is either at level 0 or 1, $b$ at either level 0 or 1 and $z$ at either level 0, 1 or 2). Boxes represent the \emph{sorts} (network components), circles represent the \emph{processes} (component levels), and the 5 \emph{actions} that model the dynamic behavior are depicted by pairs of arrows in solid and dotted lines. The grayed processes stand for the possible initial state: $\PHstate{a_1, b_0, z_1}$.
+}
+\end{figure}
+\end{example}
+
+A state of the networks is a set of active processes containing a single process of each sort.
+The active process of a given sort $a \in \PHs$ in a state $s \in \PHl$
+is noted $\PHget{s}{a}$.
+For any given process $a_i$ we also note: $a_i \in s$ if and only if $\PHget{s}{a} = a_i$. The dynamic of the PH networks is satisfied thanks to the actions. Indeed, the transition from one state $s_1$ to its successor $s_2$ is done when there is a playable action (definition \ref{def:playableAction}) at $s_1$. After each transition only one sort, or one component, changes its level from one process to another.
+
+%\begin{definition}[Action]
+%\label{def:PhAction}
+%An action is noted $\PHfrappe{a_i}{b_j}{b_k}$ where $a_i$ is a process
+%of sort $a$ and $b_j$, $b_k$ two processes of sort $b$. When $a_i = b_j$ , such an action is %refered as a self-action and $a_i$
+%is called a self-hitting process.
+%\end{definition}
+
+\begin{definition} [Playable action]
+\label{def:playableAction}
+Let $\PH = (\PHs,\PHl,\PHa)$ be a Process Hitting and $s \in \PHl$ a state of $PH$.
+We say that the action $h = \PHfrappe{a_i}{b_j}{b_k} \in \PHa$
+is \emph{playable in state $s$} if and only if
+$a_i \in s$ and $b_j \in s$ (\ie $\PHget{s}{a} = a_i$ and $\PHget{s}{b}=b_j$).
+The resulting state after playing $h$ in $s$
+is called a \emph{successor} of $s$ and
+is denoted by $(s \play h)$,
+where $\PHget{(s \play h)}{b} = b_k$ and
+$\forall c \in \PHs, c \neq b \Rightarrow \PHget{(s \play h)}{c}=\PHget{s}{c}$.
+\end{definition}
+
+We note that during these last years the Process Hitting framework was improved and we added new type of sorts like cooperative sorts and new actions like plural actions, actions with priority and actions with delay.
+
+In some cases it is necessary to represent a reaction of a set of components on one component. For example in the bio-chemical reactions :$X \xrightarrow{Y} Z$ or  $X + Y \rightarrow Y + Z$, where $ X $ is a set of reactives, $ Y $ a set of catalysts and $ Z $ a set of products.% In PH network the evolution is asynchronous so we consider that $Z$ is one component. 
+The plural action permits to represent this kind of reactions in PH. The plural is made up of two sets of processes of different sorts, which represent all the hitters and the bonds.
+
+\begin{definition}[Plural action]
+\label{def:pluralAction}
+It is a reaction of this form: \\
+ $ \PHfrappemult{A}{B} \mid A, B \in Proc \setminus \emptyset \wedge \forall q \in B, \exists p \in A, (p \neq q \wedge \PHsort(p) = \PHsort(q)) $
+\end{definition}
+
+\begin{example}
+We give a simple example to represent a plurial action by a cooperation between two biological components ($x$ and $y$) in order to activate another component ($z$) and change its level from $0$ to $1$: $\{x_1, y_1, z_0 \} \rightarrow \{x_1, y_1, z_1 \} $.
+
+\begin{figure}[ht]
+\label{fig:ph-plurial} 
+\centering
+\begin{tikzpicture}[apdotsimple/.style={apdot}]
+\TSort{(1,3)}{x}{2}{l}
+\TSort{(1,0)}{y}{2}{l}
+\TSort{(6,2)}{z}{2}{r}
+
+\TActionPlur{x_1, y_1}{z_0.west}{z_1.south west}{}{4,2.5}{left}
+% ex : \TActionPlur{f_1, c_0}{a_0.west}{a_1.south west}{}{3.5,2.5}{left}
+\TState{x_1, y_1, z_0}
+
+\end{tikzpicture}
+\caption{
+Representation of a plural action in Process Hitting network: $\{x_1, y_1, z_0 \} \rightarrow \{x_1, y_1, z_1 \} $. 
+}
+
+\end{figure}
+\end{example}
+
+In some dynamics it is crucial to have information about the delays between two events (two states in PH). The normal actions cannot show this information we just know that the state $s_2$ will be after $s_1$ in the next step but it is not possible to know how much time this transition takes time. We propose to add the delay in the action attributes which is responsable of the transition between the two states. That means that this action needs to be played during a specific time so that the system doesn't change the state (defintion \ref{def:TimedAction}).
+
+\begin{definition}[timed action]
+\label{def:TimedAction}
+
+\end{definition}
+
+\begin{definition}[temporised sort]
+\label{def:TempSort}
+
+\end{definition}
+
+The PH was chosen for several reasons.
+First, it is a general framework that,
+although it was mainly used for biological networks,
+allows to represent any kind of dynamical model,
+and converters to several other representations are available (see section%~\ref{comparison}).
+Although an efficient dynamical analysis already exists for this framework,
+based on an approximation of the dynamics,
+it is interesting to identify its limits
+and compare them to the approached we present later in this paper.
+Finally, the particular form of the actions in a PH model allow
+to easily represent them in ASP,
+with one fact per action, as described in the next section.
+Other representations may have required supplementary complexity;
+for instance, a labeling would be required
+if actions could be triggered by a variable number of processes.
+
+%Parler de l'asynchrone model
+
+The PH was chosen for several reasons.
+First, it is a general framework that,
+although it was mainly used for biological networks,
+allows to represent any kind of dynamical model,
+and converters to several other representations are available (see section%~\ref{comparison}).
+Although an efficient dynamical analysis already exists for this framework,
+based on an approximation of the dynamics,
+it is interesting to identify its limits
+and compare them to the approached we present later in this paper.
+Finally, the particular form of the actions in a PH model allow
+to easily represent them in ASP,
+with one fact per action, as described in the third section.
+Other representations may have required supplementary complexity;
+for instance, a labeling would be required
+if actions could be triggered by a variable number of processes.
+
+
+The rest of the report focuses on the representation of the previous definitions through ASP than we give the example of Circadian Clock network. Later we propose an approch to resolve the completion problem of PH networks with the use of ASP.
+
