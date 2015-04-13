@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.16)  13 APR 2015 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.16)  13 APR 2015 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,8 +846,12 @@ Package: galois 2005/03/19 v1.05, Galois connections, Patrick.Cousot@ens.fr
 \@GALOISgammaarrowhalfheight=\skip62
 )
 Excluding 'comment' comment. Excluding 'comment' comment.) (./main.aux
-(./parts/intro.aux) (./parts/processHitting.aux) (./parts/circadianClock.aux)
-(./parts/PH-ASP.aux) (./parts/completionPH.aux) (./parts/evaluation.aux)
+No file parts/intro.aux.
+No file parts/processHitting.aux.
+No file parts/circadianClock.aux.
+No file parts/PH-ASP.aux.
+No file parts/completionPH.aux.
+No file parts/evaluation.aux.
 (./parts/concl.aux))
 \openout1 = `main.aux'.
 
@@ -949,6 +953,9 @@ Missing character: There is no « in font cmr9!
 \openout2 = `parts/processHitting.aux'.
 
  (./parts/processHitting.tex
+
+LaTeX Warning: Reference `def:PH' on page 3 undefined on input line 6.
+
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no œ in font cmr10!
@@ -963,13 +970,25 @@ Overfull \hbox (1.67143pt too wide) in paragraph at lines 33--35
 \OT1/cmr/m/it/10 where: 
  []
 
+
+LaTeX Warning: Reference `fig:ph' on page 3 undefined on input line 48.
+
 Missing character: There is no ; in font nullfont!
+
+LaTeX Warning: Reference `def:playableAction' on page 3 undefined on input line
+ 92.
+
 [3
 
 
 ]
 Missing character: There is no ; in font nullfont!
- [4]) [5]
+
+
+LaTeX Warning: Reference `def:TimedAction' on page 4 undefined on input line 14
+8.
+
+[4]) [5]
 \openout2 = `parts/circadianClock.aux'.
 
  (./parts/circadianClock.tex) [6
@@ -1012,16 +1031,23 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 39173B55037E27CC7B0BE7344231A0CA;949.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
  ) 
 Here is how much of TeX's memory you used:
- 21563 strings out of 493117
- 433803 string characters out of 6135433
- 537243 words of memory out of 5000000
- 24524 multiletter control sequences out of 15000+600000
+ 21545 strings out of 493117
+ 433434 string characters out of 6135433
+ 533098 words of memory out of 5000000
+ 24518 multiletter control sequences out of 15000+600000
  11978 words of font info for 47 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 55i,12n,82p,1252b,935s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,82p,1252b,934s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -1040,10 +1066,10 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (10 pages, 232406 bytes).
+Output written on main.pdf (10 pages, 232268 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
+ 230 PDF objects out of 1000 (max. 8388607)
+ 180 compressed objects within 2 object streams
  37 named destinations out of 1000 (max. 500000)
  213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
