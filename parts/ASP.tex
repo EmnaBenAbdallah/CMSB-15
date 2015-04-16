@@ -1,0 +1,26 @@
+\section{Answer Set Programming}
+
+	In this section, we recapitulate the basic elements of ASP.
+	An answer set program is a finite set of rules of the form
+	\begin{equation}
+		\label{rule}
+		a_{0}\ \emph{:-}\ a_{1},\ \ldots,\ a_{m},\ not\ a_{m+1},\ \ldots,\ not\ a_{n}\
+	\end{equation}
+	where $n \ge m \ge 0$, $a_{0}$ is a propositional atom or $\bot$, all
+	$a_{1}, \ldots ,a_{n}$ are propositional atoms and the symbol "$not$" denotes default negation.
+	If $a_{0} = \bot$, then Rule (\ref{rule}) is a constraint (in which case $a_{0}$ is usually omitted).
+	The intuitive reading of a rule of form (\ref{rule}) is that whenever $a_{1}, \ldots, a_{m}$
+	are known to be true and there is no evidence for any of the default negated atoms $a_{m+1}, \ldots, a_{n}$ to be true, then $a_{0}$ has to be true as well.
+	Note that $\bot$ can never become true.
+	
+	In the ASP paradigm, the search of solutions consists in computing answer sets of answer set program.
+	An answer set for a program is defined by Gelfond and Lifschitz \cite{DBLP:conf/iclp/GelfondL88} as follow.
+	An interpretation $I$ is a finite set of propositional atoms.
+	An atom $a$ is true under $I$ if $a \in I$, and false otherwise.
+	A rule $r$ of form \ref{rule} is true under $I$ if $\{a1,\ \dots,\ a_{m}\} \subseteq I$ and $\{a_{m+1},\ \ldots,\ a_{n}\} \cap I = \emptyset$ implies $a_{0} \in\ I$.
+	An Interpretation $I$ is a model of a program $P$ if each rule $r \in P$ is true under $I$.
+	Finally, $I$ is an answer set of $P$ if $I$ is a subset-minimal model of $P^{I}$,
+	where $P^{I}$ is defined as the program that results from $P$ by deleting all rules that contain a default negated atom from $I$, 
+	and deleting all default negated atoms from the remaining rules.
+	Programs can yield no answer set, one answer set, or many answer sets.
+	To compute answer sets of an answer set program, we run an ASP solver.
