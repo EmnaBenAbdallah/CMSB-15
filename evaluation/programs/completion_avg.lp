@@ -1,17 +1,10 @@
 % Trouver les actions à partir des observations déscrétisées
 % Delay des action est la moyenne des délais de la même action
 
-process("L",0..1).
-process("PC",0..1).
-process("G",0..1).
-
-sort(X) :- process(X,_).
-
 time(0..n).
 val(0..n).
-changeState("G",0).
 
-
+changeState(X,0) :- process(X,_).
 
 obs(X,Val,T) :- obs(X, Val, T1,T2), T>=T1, T<=T2, process(X,Val), time(T).
 

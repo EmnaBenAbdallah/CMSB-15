@@ -17,7 +17,7 @@ do
 	echo "$i observations:" >> $clingo_output
 	echo "" >> $clingo_output
 	wait
-	./clingo 0 programs/generator.lp programs/benchmarks/circadian.lp --const n=$i --asp09 > $observations
+	./clingo 0 programs/generator.lp benchmarks/circadian.lp --const n=$i --asp09 > $observations
 	wait
 	echo -n "$i " >> $time_output
 	wait

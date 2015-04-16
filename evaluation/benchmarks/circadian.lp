@@ -18,6 +18,6 @@ existInfluence("G","L").
 existInfluence("L","L").
 
 %Initial state of the network
-obs("L",0,0).
-obs("PC",0,0).
-obs("G",1,0).
+init(actifProcess("PC",0 )).
+init(actifProcess("G",0 )).
+init(actifProcess("L",0 )).
