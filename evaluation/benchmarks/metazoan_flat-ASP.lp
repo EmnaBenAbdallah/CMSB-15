@@ -26,9 +26,9 @@ action("fc",2,"a",0,1).
 
 % initialisation des process actifs
 init(actifProcess("a",0 )).
-init(actifProcess("c",0 )).
-init(actifProcess("f",0 )).
-init(actifProcess("fc",0 )).
+init(actifProcess("c",1 )).
+init(actifProcess("f",1 )).
+init(actifProcess("fc",3 )).
 
 % Liste des process à atteindre 
 %goal(actifProcess("a", xx )).
