@@ -167,9 +167,9 @@ font=\footnotesize,inner sep=1pt]
 
 % the affiliations are given next; don't give your e-mail address
 % unless you accept that it will be published
-\institute{LUNAM Université, \'Ecole Centrale de Nantes,
+\institute{LUNAM Universit\'e, \'Ecole Centrale de Nantes,
  IRCCyN UMR CNRS 6597\\ (Institut de Recherche en Communications et Cybern\'etique de Nantes),\\
-  1 rue de la Noë, 44321 Nantes, France.\\
+  1 rue de la No\"{e}, 44321 Nantes, France.\\
 \and
 National Institute of Informatics, \\
 2-1-2, Hitotsubashi, Chiyoda-ku, Tokyo 101-8430, Japan.
@@ -189,9 +189,14 @@ National Institute of Informatics, \\
 
 \begin{abstract}
 
-Almost the models of biological networks are not robust and need some times to be revised and adapted to the new observations. A system maintains its func- tions against internal and external perturbations, leading to topological changes in the network with varying delays. To understand the resilient behaviour of biological networks, we propose novel methods. First we propose an approach to model a time-dependent asynchronous and non-deterministic networks through Process Hitting (PH) framework which is a new framework particularly suitable to model biological regulatory networks. Second we have developed a novel network completion algorithm for time-varying networks to analyse its behavior based on the framework of network completion. This completion aims to make the minimum amount of modifications to a given network so that the resulting network is most consistent with the observed data. We demonstrate the effectiveness of our proposed methods through computational experiments using synthetic gene expression data of the circadien clock network modeled through PH. The results indicate that our methods exhibit good performance in terms of completing and inferring gene association networks with time-varying structures.
+The modeling of biologicals systems relies on background knowledge, deriving either from literature %(\emph{i.e.}, previous works that have been considered valuable) 
+and/or the analysis of biological observations. But with the development of high-throughput data, there is a growing need for methods that are able to automatically revise the existing models with regard to additional observations obtained by biologists. 
+Our research aims at providing a logical approach to revise biological regulatory networks thanks to time series data, \emph{i.e.}, gene expression data depending on time. In this paper, we propose two revision methodologies for models expressed through a timed extension of the Process Hitting framework (which is a restriction, well suited for biological systems, of networks of synchronizing timed automata). The revision methods we introduce aim to make the minimum amount of modifications (addition/deletion of actions between biological components) to a given input model so that the resulting model is most consistent with the observed data. They are implemented in Answer Set Programming, which is a paradigm proven efficient to tackle knowledge representation problems. 
+We illustrate the merits of our methods in a twofold way: (1) we exhibit the benefits of such automatic approaches on a case study consisting of a qualitative model of circadian clock; (2) we lead computational experiments on various benchmarks to show the performances of our algorithms. 
 
-\keywords{Answer Set Programming, Process Hitting, time-varying genetic networks, network completion}
+%Almost the models of biological networks are not robust and need some times to be revised and adapted to the new observations. A system maintains its func- tions against internal and external perturbations, leading to topological changes in the network with varying delays. To understand the resilient behaviour of biological networks, we propose novel methods. First we propose an approach to model a time-dependent asynchronous and non-deterministic networks through Process Hitting (PH) framework which is a new framework particularly suitable to model biological regulatory networks. Second we have developed a novel network completion algorithm for time-varying networks to analyse its behavior based on the framework of network completion. This completion aims to make the minimum amount of modifications to a given network so that the resulting network is most consistent with the observed data. We demonstrate the effectiveness of our proposed methods through computational experiments using synthetic gene expression data of the circadien clock network modeled through PH. The results indicate that our methods exhibit good performance in terms of completing and inferring gene association networks with time-varying structures.
+
+\keywords{Answer Set Programming, Process Hitting, dynamic modeling, time-varying genetic networks, network revision}
 
 \end{abstract}
 
