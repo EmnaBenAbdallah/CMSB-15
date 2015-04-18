@@ -7,15 +7,16 @@
 \subsection{Formalization}
 
 \begin{definition}[Applicability]
-	Let $C$ be a chronogram and $a$ be an action of a Process Hitting $PH$ such that $a = action(X_1,Val_1,\ldots, X_n,Val_n, G, val, val', D)$.
+	Let $C$ be a chronogram and $a$ be an action of a Process Hitting $PH$ such that $a = action(S_1,P_1,\ldots, S_n,P_n, G, P, P', D)$.
 	Let $t$ be a time step of $C$, the action $a$ is {\it applicable} at $t$,
-	if there is a gene change at $t-D$, no gene change during the interval $[t-D,t]$ and all $X_i$ has the value $Val_i$ from $t-D$ to $t$.
+	iff $\forall t', 0 \leq t-D < t' < t$, the active process of each sort $S_i$ is $P_i$ and the active process of the sort $G$ is $P$.
+	% there is a gene change at $t-D$, no gene change during the interP $[t-D,t]$ and all $S_i$ has the Pue $P_i$ from $t-D$ to $t$.
 \end{definition}
 
 % TODO: Préciser quelque part que si au moins une action est applicable a un instant $t$, il doit y avoir un changement
 
 \begin{definition}[Consistency]
-	Let $C$ be a chronogram and $a$ be an action of a Process Hitting $PH$ such that $a = action(X_1,Val_1,\ldots, X_n,Val_n, G, val, val', D)$.
+	Let $C$ be a chronogram and $a$ be an action of a Process Hitting $PH$ such that $a = action(S_1,P_1,\ldots, S_n,P_n, G, P, P', D)$.
 	The action $a$ is {\it consistent} with $C$, if there is a gene change at each time step $t$ of $C$ where $a$ can be applied.
 \end{definition}
 
@@ -41,12 +42,12 @@ Here, both the actions generated and existing ones that are not consistent with 
 
 		%\item Step 1: Sample the chronogram for each gene at each time step.
 		\item Let $PH'' := PH'$
-		\item Step 1: For each time where a gene $G$ changes its value from $val$ to $val'$ in $C$:
+		\item Step 1: For each time where a gene $G$ changes its Pue from $P$ to $P'$ in $C$:
 
 		\begin{itemize}
 			\item[-] 1.1: Let $D$ be the delay since the last time a gene has changed.
-			\item[-] 1.2: Generate all actions with delay $D$ which involve all subsets of size $i$ of the genes $X_1, \ldots, X_n$ having an influence on $G$:
-			$$A := action(X_1,Val_1,\ldots, X_n,Val_n, G, val, val', D)$$
+			\item[-] 1.2: Generate all actions with delay $D$ which involve all subsets of size $i$ of the genes $S_1, \ldots, S_n$ having an influence on $G$:
+			$$A := action(S_1,P_1,\ldots, S_n,P_n, G, P, P', D)$$
 			\item Add all action $A$ in $PH''$
 		\end{itemize}
 
@@ -89,7 +90,7 @@ Algorithm \ref{alg:ASPHC_ap} show the pseudo code of our approximated algorithm.
 Like in Algorithm \ref{alg:ASPHC}, it generates all possible actions that can realize each change observed.
 But then, since observation are not perfect, we cannot safely removed non-consistent actions.
 Here, we just merge actions by replacing the one that only differ by there delay by one action where its delay is the average.
-The intuition is that, in practice, if there is enougth observation, the delay of those actions should tend to the real value.
+The intuition is that, in practice, if there is enougth observation, the delay of those actions should tend to the real Pue.
 
 \begin{algorithm}
 	\caption{PH-Completion($PH,Chronogram,Influences,indegree$)}
@@ -99,16 +100,16 @@ The intuition is that, in practice, if there is enougth observation, the delay o
 
 		%\item Step 1: Sample the chronogram for each gene at each time step.
 		\item Let $PH' := PH$
-		\item Step 1: For each time where a gene $G$ changes its value from $val$ to $val'$ in $C$:
+		\item Step 1: For each time where a gene $G$ changes its Pue from $P$ to $P'$ in $C$:
 
 		\begin{itemize}
 			\item[-] 1.1: Let $D$ be the delay since the last time a gene has changed.
-			\item[-] 1.2: Generate all actions with delay $D$ which involve all subsets of size $i$ of the genes $X_1, \ldots, X_n$ having an influence on $G$:
-			$$A := action(X_1,Val_1,\ldots, X_n,Val_n, G, val, val', D)$$
+			\item[-] 1.2: Generate all actions with delay $D$ which involve all subsets of size $i$ of the genes $S_1, \ldots, S_n$ having an influence on $G$:
+			$$A := action(S_1,P_1,\ldots, S_n,P_n, G, P, P', D)$$
 			\item Add all action $A$ in $PH'$
 		\end{itemize}
 		
-		\item Step 2: Merge each action with the same hitters, $X_1,Val_1,\ldots, X_n,Val_n$ and the same target, $G, val, val'$, into one action where the delay is the average.
+		\item Step 2: Merge each action with the same hitters, $S_1,P_1,\ldots, S_n,P_n$ and the same target, $G, P, P'$, into one action where the delay is the average.
 		\item OUTPUT:  a completed Process Hitting that realize the chronogram.
 	\end{itemize}
 \end{algorithm}
@@ -130,7 +131,7 @@ The intuition is that, in practice, if there is enougth observation, the delay o
 		which belongs to $O(T*P^{S+1})$ since $0 \leq i \leq P$.
 	
 		% Run time
-		%At each time step, atmost one gene can change its value in the chronogram $C$.
+		%At each time step, atmost one gene can change its Pue in the chronogram $C$.
 		Atmost $i^S$ actions can be produced for each gene change, the complexity of step 1 is then $O(c * i^S)$.
 		In step 2 of Algorithm \ref{alg:PHC} at each time step where there is no gene change, it checks all actions generated so far.
 		Since there is $T * P * i^S$ possibles actions, this operation complexity is $O( (T-c) * T * P * i^S)$.
