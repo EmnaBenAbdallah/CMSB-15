@@ -16,14 +16,14 @@
 % Observers
 %-------------
 
-	% @brief: is true if the active process of @Sort is @Val for each time step between @T1 and @T2 
+	% @brief: is true if the active process of @Sort is @Proc for each time step between @T1 and @T2 
 	% obs1(Sort, Process, Time, Time)
 	% {
-		obs1(Sort,Val,0,1) :- init(actifProcess(Sort,Val)). % Initial state
+		obs1(Sort,Proc,0,1) :- init(actifProcess(Sort,Proc)). % Initial state
 
-		obs1(Sort, Val, T1,T2) :- obs1(Sort,Val,T1,T2-1), not change(Sort,T2-1), time(T1;T2).
+		obs1(Sort, Proc, T1,T2) :- obs1(Sort,Proc,T1,T2-1), not change(Sort,T2-1), time(T1;T2).
 
-		obs1(Sort, Val, T1,T2) :- change(Sort,Val,T1), T2=T1+1, time(T1;T2).
+		obs1(Sort, Proc, T1,T2) :- change(Sort,Proc,T1), T2=T1+1, time(T1;T2).
 	% }
 	
 	% @brief: is true if a gene change occurs at @T (gene @Target if specified)
@@ -38,25 +38,23 @@
 % Predicates
 %------------
 
-	% @brief: the gene @Target changes to value @Val at time step @T
+	% @brief: the gene @Target changes to value @Proc at time step @T
 	% change(Sort,Process,Time)
 	% {
-		{change(Target,Val_,T)} :- action(Hitter_1,Proc_1,Hitter_2,Proc_2,Target,Val,Val_,D),
+		{change(Target,Proc_,T)} :- action(Hitter_1,Proc_1,Target,Proc,Proc_,D),
 		obs1(Hitter_1,Proc_1,Th1,T), Th1 <= T-D, % Each hitters @Sortn and @Target has the corresponding value since @D unit of time
-		obs1(Hitter_2,Proc_2,Th2,T), Th2 <= T-D,
-		obs1(Target, Val,Tt,T), Tt <= T-D, 
-		time(T;Th1;Th2;Tt;D).
+		obs1(Target, Proc,Tt,T), Tt <= T-D, 
+		time(T;Th1;Tt;D).
 	% }
 
 
 	% @brief: is true if an action is applicable at @T
 	% should_change(Time)
 	% {
-		should_change(T) :- action(Hitter_1,Proc_1,Hitter_2,Proc_2,Target,Val,Val_,D),
+		should_change(T) :- action(Hitter_1,Proc_1,Target,Proc,Proc_,D),
 		obs1(Hitter_1,Proc_1,Th1,T), Th1 <= T-D,
-		obs1(Hitter_2,Proc_2,Th2,T), Th2 <= T-D,
-		obs1(Target, Val,Tt,T), Tt <= T-D, 
-		time(T;Th1;Th2;Tt;D).
+		obs1(Target, Proc,Tt,T), Tt <= T-D, 
+		time(T;Th1;Tt;D).
 	% }
 
 %-------------
@@ -69,10 +67,10 @@
 	% @brief: A change has to occur if an action is applicable
 	:- should_change(T), not change(T), time(T).
 
-	% @brief: is true if the active process of @Sort is @Val for each time step of the interval [@T1,@Tmax] and the interval is maximal 
+	% @brief: is true if the active process of @Sort is @Proc for each time step of the interval [@T1,@Tmax] and the interval is maximal 
 	% obs(Sort, Process, Time, Time)
 	% {
-		obs(Sort, Val, T1, Tmax) :- Tmax=#max[ obs1(Sort, Val, T1, T2) : time(T2) : val(T2) = T2 ], obs1(Sort, Val, T1, _).
+		obs(Sort, Proc, T1, Tmax) :- Tmax=#max[ obs1(Sort, Proc, T1, T2) : time(T2) : val(T2) = T2 ], obs1(Sort, Proc, T1, _).
 	% }
 
 %------------

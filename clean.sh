@@ -1,1 +1,1 @@
-rm *~
+find . -name "*~" -type f -delete
