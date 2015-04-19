@@ -10,7 +10,7 @@ echo -n "" > $time_output
 
 echo "#obs runtime" > $time_output
 
-for i in {1..100000}
+for i in {57..58}
 do
 	
 	echo "------------------------------" >> $clingo_output

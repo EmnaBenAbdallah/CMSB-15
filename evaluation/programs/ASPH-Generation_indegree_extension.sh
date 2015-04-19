@@ -13,6 +13,23 @@ do
 
 	# Influences:
 	# {
+		# Action without delay
+		for (( hitter=1; hitter<=i; hitter++ ))
+		do
+			echo -n "existInfluence(Hitter,Target) :- action("
+			for (( prev=1; prev<hitter; prev++ ))
+			do
+				echo -n "_,_,"
+			done
+			echo -n "Hitter,_,"
+			for (( after=hitter; after<i; after++ ))
+			do
+				echo -n "_,_,"
+			done
+			echo "Target,_,_)."
+		done
+		
+		# Action with delay
 		for (( hitter=1; hitter<=i; hitter++ ))
 		do
 			echo -n "existInfluence(Hitter,Target) :- action("

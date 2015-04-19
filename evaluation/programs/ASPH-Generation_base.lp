@@ -45,6 +45,11 @@
 		obs1(Hitter_1,Proc_1,Th1,T), Th1 <= T-D, % Each hitters @Sortn and @Target has the corresponding value since @D unit of time
 		obs1(Target, Proc,Tt,T), Tt <= T-D, 
 		time(T;Th1;Tt;D).
+		
+		{change(Target,Proc_,T)} :- action(Hitter_1,Proc_1,Target,Proc,Proc_),
+		obs1(Hitter_1,Proc_1,Th1,T), Th1 <= T-1, % Each hitters @Sortn and @Target has the corresponding value since @D unit of time
+		obs1(Target, Proc,Tt,T), Tt <= T-1, 
+		time(T;Th1;Tt).
 	% }
 
 
@@ -55,6 +60,11 @@
 		obs1(Hitter_1,Proc_1,Th1,T), Th1 <= T-D,
 		obs1(Target, Proc,Tt,T), Tt <= T-D, 
 		time(T;Th1;Tt;D).
+		
+		should_change(T) :- action(Hitter_1,Proc_1,Target,Proc,Proc_),
+		obs1(Hitter_1,Proc_1,Th1,T), Th1 <= T-1,
+		obs1(Target, Proc,Tt,T), Tt <= T-1, 
+		time(T;Th1;Tt).
 	% }
 
 %-------------
