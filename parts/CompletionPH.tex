@@ -6,143 +6,166 @@
 
 \subsection{Formalization}
 
-\begin{definition}[Applicability]
-	Let $C$ be a chronogram and $a$ be an action of a Process Hitting $PH$ such that $a = action(S_1,P_1,\ldots, S_n,P_n, G, P, P', D)$.
-	Let $t$ be a time step of $C$, the action $a$ is {\it applicable} at $t$,
-	iff $\forall t', 0 \leq t-D < t' < t$, the active process of each sort $S_i$ is $P_i$ and the active process of the sort $G$ is $P$.
-	% there is a gene change at $t-D$, no gene change during the interP $[t-D,t]$ and all $S_i$ has the Pue $P_i$ from $t-D$ to $t$.
-\end{definition}
+%\begin{definition}[Applicability]
+%	Let $C$ be a chronogram and $a$ be an action of a Process Hitting $PH$ such that $a = action(S_1,P_1,\ldots, S_n,P_n, G, P, P', D)$.
+%	Let $t$ be a time step of $C$, the action $a$ is {\it applicable} at $t$,
+%	iff $\forall t', 0 \leq t-D < t' < t$, the active process of each sort $S_i$ is $P_i$ and the active process of the sort $G$ is $P$.
+	% there is a gene change at $t-D$, no gene change during the interP $[t-D,t]$ and all $S_i$ has the value $P_i$ from $t-D$ to $t$.
+%\end{definition}
 
 % TODO: Préciser quelque part que si au moins une action est applicable a un instant $t$, il doit y avoir un changement
 
-\begin{definition}[Consistency]
-	Let $C$ be a chronogram and $a$ be an action of a Process Hitting $PH$ such that $a = action(S_1,P_1,\ldots, S_n,P_n, G, P, P', D)$.
-	The action $a$ is {\it consistent} with $C$, if there is a gene change at each time step $t$ of $C$ where $a$ can be applied.
-\end{definition}
+%\begin{definition}[Consistency]
+%	Let $C$ be a chronogram and $a$ be an action of a Process Hitting $PH$ such that $a = action(S_1,P_1,\ldots, S_n,P_n, G, P, P', D)$.
+%	The action $a$ is {\it consistent} with $C$, if there is a gene change at each time step $t$ of $C$ where $a$ can be applied.
+%\end{definition}
 
 \subsection{Algorithm}
-
-In this section we propose two algorithms to complete Process Hitting networks.
-Both algorithms takes as input a Process Hitting and a chronogram of genes evolutions of this network.
+In this section we propose a simple algorithm to complete Process Hitting networks.
+This algorithm takes as input a Process Hitting and a chronogram of genes evolutions of this network.
 Knowing the genes influences (or assuming all possible influences),
-these algorithms will complete the input network by adding the delayed actions that could have realized the changes observed in the chronogram.
-The first algorithm we propose is a complete approach:
-assuming that all input observations are perfect it will correctly revise the input Process hitting by adding new actions and removing existing ones.
-Algorithm \ref{alg:ASPHC} show the pseudo code of our completion algorithm.
-It first consider the gene changes, to generates all possible actions that can realize each change.
-At this step, new actions can be added to the input network to perform the changes observed that no current action in the network could perform.
-Then, it consider the time steps where there is no changes to remove the actions that would made one at this moment.
-Here, both the actions generated and existing ones that are not consistent with the observation are removed from the network.
-
-\begin{algorithm}
-	\caption{PH-Completion($PH,Chronogram,Influences,indegree$)}
-	\label{alg:PHC}
-	\begin{itemize}
-		\item INPUT: a Process Hitting $PH'$, a chronogram $C$ of the genes evolution of a Process Hitting $PH$, the genes influences and a maximal action indegree $i$.
-
-		%\item Step 1: Sample the chronogram for each gene at each time step.
-		\item Let $PH'' := PH'$
-		\item Step 1: For each time where a gene $G$ changes its Pue from $P$ to $P'$ in $C$:
-
-		\begin{itemize}
-			\item[-] 1.1: Let $D$ be the delay since the last time a gene has changed.
-			\item[-] 1.2: Generate all actions with delay $D$ which involve all subsets of size $i$ of the genes $S_1, \ldots, S_n$ having an influence on $G$:
-			$$A := action(S_1,P_1,\ldots, S_n,P_n, G, P, P', D)$$
-			\item Add all action $A$ in $PH''$
-		\end{itemize}
-
-		\item Step 2: For each time step $t$ where there is no gene change
-		\begin{itemize}
-			\item[-] Remove from $PH''$ all actions that are applicable at $t$
-		\end{itemize}
-		\item OUTPUT: $PH''$ a completed Process Hitting that realizes the chronogram.
-	\end{itemize}
-\end{algorithm}
-
-\begin{theorem}[Completeness and Correctness]
-	\label{th:correct}
-	Let $PH$ be a Process Hitting, $C$ be a chronogram of the genes of $PH$ and $A$ be the set of actions of $PH$ whose realized the chronogram $C$.
-	Let $PH'$ be a Process Hitting and $A'$ be the set of actions of $PH'$ such that $A' \subseteq A$.
-	Given $PH'$ and $C$ as input, Algorithm \ref{alg:PHC} is complete and correct: it will output a process hitting $PH''$,
-	with $A''$ the set of actions of $PH''$ such that $A \subseteq A''$ ($A''$ can realize $C$) and all action $a \in A''$ are consistent with $C$.
-	\begin{proof}
-	Lets suppose that the algorithm is not complete, then there is an action $a \in A$ that realized $C$ and $a \not \in A''$.
-	After step 1.2, $PH''$ contains all actions that can realized each gene change.
-	Here there is no action $a \in A$ that realized $C$ which is not generated by the algorithm, so $a \in A''$.
-	Then it implies that at step 2, the action $a$ is removed from $A''$.
-	It means that there is a time step $t$ where $a$ is applicable, but in the chronogram $C$ there is no gene change at $t$.
-	But since $a \in A$, a change should have occurs at $t$, this is a contradiction.
-	So there is no $a \in A$ that could be remove from $A''$ at step 2, the algorithm is complete.
-	$\qed$
-	
-	The algorithm is also correct and this conclusion is trivial from the operation of step 2.
-	If it was not correct, then there is an action $a \in A''$ that is not consistent with $C$.
-	But all such action are removed at step 2.
-	So that the algorithm output is correct.
-	
-	All action of the outputted Process Hitting $PH'$ are consistent with the input chronogram $C$.
-	\end{proof}
-\end{theorem}
-
-The second algorithm we propose is an approximated approach:
-assuming that input observations can be noisy it will revise the input Process hitting by adding action and changing the delay of existing ones.
-Algorithm \ref{alg:ASPHC_ap} show the pseudo code of our approximated algorithm.
-Like in Algorithm \ref{alg:ASPHC}, it generates all possible actions that can realize each change observed.
-But then, since observation are not perfect, we cannot safely removed non-consistent actions.
-Here, we just merge actions by replacing the one that only differ by there delay by one action where its delay is the average.
-The intuition is that, in practice, if there is enougth observation, the delay of those actions should tend to the real Pue.
+this algorithm will complete the input network by adding the delayed actions that could have realized the changes observed in the chronogram.
+%The algorithm we propose will revise the input Process hitting by adding actions and changing the delay of existing ones.
+Algorithm \ref{alg:PHC_ap} show the pseudo code of our algorithm.
+If the observations are perfect, it will generates all possible actions that can realize each change observed.
+Because of the delayed semantic, it is not possible to decide if an action is correct or not.
+But we can output the minimal sets of actions necessary to realize the changes observed.
+%Like in Algorithm \ref{alg:ASPHC}, it generates all possible actions that can realize each change observed.
+%But then, since observation are not perfect, we cannot safely removed non-consistent actions.
+If the observation are not perfect, we can merge actions by replacing the one that only differ by there delay by one action where its delay is the average.
+The intuition is that, in practice, if there is enougth observation, the delay of those actions should tend to the real value.
 
 \begin{algorithm}
 	\caption{PH-Completion($PH,Chronogram,Influences,indegree$)}
 	\label{alg:PHC_ap}
 	\begin{itemize}
-		\item INPUT: a Process Hitting $PH$, a chronogram $C$ of the genes evolution of $PH$, the genes influences and a maximal action indegree $i$.
+		\item INPUT: a Process Hitting $PH$, a chronogram $C$ of the genes evolution of $PH$, the genes influences and a maximal action in-degree $i$.
 
 		%\item Step 1: Sample the chronogram for each gene at each time step.
-		\item Let $PH' := PH$
-		\item Step 1: For each time where a gene $G$ changes its Pue from $P$ to $P'$ in $C$:
+		\item Let $A := \emptyset$
+		\item Step 1: For each time where a gene $G$ changes its value from $P$ to $P'$ in $C$:
 
 		\begin{itemize}
-			\item[-] 1.1: Let $D$ be the delay since the last time a gene has changed.
-			\item[-] 1.2: Generate all actions with delay $D$ which involve all subsets of size $i$ of the genes $S_1, \ldots, S_n$ having an influence on $G$:
-			$$A := action(S_1,P_1,\ldots, S_n,P_n, G, P, P', D)$$
-			\item Add all action $A$ in $PH'$
+			\item[-] Let $D$ be the delay since the last time a gene has changed.
+			\item[-] Generate all actions with delay $D$ which involve all subsets of size $i$ of the genes $S_1, \ldots, S_n$ having an influence on $G$:
+			$$a := action(S_1,P_1,\ldots, S_n,P_n, G, P, P', D)$$
+			\item Add all action $a$ in $A$
 		\end{itemize}
 		
-		\item Step 2: Merge each action with the same hitters, $S_1,P_1,\ldots, S_n,P_n$ and the same target, $G, P, P'$, into one action where the delay is the average.
-		\item OUTPUT:  a completed Process Hitting that realize the chronogram.
+		\item Step 2 (optional): Merge each action with the same hitters, $S_1,P_1,\ldots, S_n,P_n$ and the same target, $G, P, P'$,
+		into one action where the delay is the average.
+		
+		\item Step 3: Generate $S$ the set of all minimal subsets of actions of $A$ that realize $C$:
+			$$\forall A \in S, \not \exists A' \in S, A' \subset A$$
+			
+		\item OUTPUT: S a set of completed Process Hitting that realize the chronogram.
 	\end{itemize}
 \end{algorithm}
+
+%In this section we propose two algorithms to complete Process Hitting networks.
+%Both algorithms takes as input a Process Hitting and a chronogram of genes evolutions of this network.
+%Knowing the genes influences (or assuming all possible influences),
+%these algorithms will complete the input network by adding the delayed actions that could have realized the changes observed in the chronogram.
+%The first algorithm we propose is a complete approach:
+%assuming that all input observations are perfect it will correctly revise the input Process hitting by adding new actions and removing existing ones.
+%Algorithm \ref{alg:ASPHC} show the pseudo code of our completion algorithm.
+%It first consider the gene changes, to generates all possible actions that can realize each change.
+%At this step, new actions can be added to the input network to perform the changes observed that no current action in the network could perform.
+%Then, it consider the time steps where there is no changes to remove the actions that would made one at this moment.
+%Here, both the actions generated and existing ones that are not consistent with the observation are removed from the network.
+
+%\begin{algorithm}
+%	\caption{PH-Completion($PH,Chronogram,Influences,indegree$)}
+%	\label{alg:PHC}
+%	\begin{itemize}
+%		\item INPUT: a Process Hitting $PH'$, a chronogram $C$ of the genes evolution of a Process Hitting $PH$, the genes influences and a maximal action indegree $i$.
+
+		%\item Step 1: Sample the chronogram for each gene at each time step.
+%		\item Let $PH'' := PH'$
+%		\item Step 1: For each time where a gene $G$ changes its value from $P$ to $P'$ in $C$:
+
+%		\begin{itemize}
+%			\item[-] 1.1: Let $D$ be the delay since the last time a gene has changed.
+%			\item[-] 1.2: Generate all actions with delay $D$ which involve all subsets of size $i$ of the genes $S_1, \ldots, S_n$ having an influence on $G$:
+%			$$A := action(S_1,P_1,\ldots, S_n,P_n, G, P, P', D)$$
+%			\item Add all action $A$ in $PH''$
+%		\end{itemize}
+
+%		\item Step 2: For each time step $t$ where there is no gene change
+%		\begin{itemize}
+%			\item[-] Remove from $PH''$ all actions that are applicable at $t$
+%		\end{itemize}
+%		\item OUTPUT: $PH''$ a completed Process Hitting that realizes the chronogram.
+%	\end{itemize}
+%\end{algorithm}
+%
+
+\begin{theorem}[Completeness]% and Correctness]
+	\label{th:correct}
+	Let $PH$ be a Process Hitting, $C$ be a chronogram of the genes of $PH$ and $A$ be the set of actions of $PH$ whose realized the chronogram $C$.
+	Let $PH'$ be a Process Hitting and $A'$ be the set of actions of $PH'$ such that $A' \subseteq A$.
+	Given $PH'$ and $C$ as input, Algorithm \ref{alg:PHC_ap} (without step 2) is complete:
+	it will output a set of process hitting $S$,
+	such that $\exists PH'' \in S$ with $A''$ the set of actions of $PH''$ such that $A'' = A' \cup A$.
+	\begin{proof}
+	Lets suppose that the algorithm is not complete, then there is an action $a \in A$ that realized $C$ and $a \not \in A''$.
+	After step 1.2, $PH''$ contains all actions that can realized each gene change.
+	Here there is no action $a \in A$ that realized $C$ which is not generated by the algorithm, so $a \in A''$.
+	Then it implies that at step 3, the action $a$ is removed from $A''$.
+	But since $a$ realized one the change of $C$ and $a$ is generated at step 1, then it will be present in one of the minimal subset of actions.
+	And $a$ will be in one of the network outputted by the algorithm.
+	%It means that there is a time step $t$ where $a$ is applicable, but in the chronogram $C$ there is no gene change at $t$.
+	%But since $a \in A$, a change should have occurs at $t$, this is a contradiction.
+	%So there is no $a \in A$ that could be remove from $A''$ at step 2, the algorithm is complete.
+	$\qed$
+	%
+	%The algorithm is also correct and this conclusion is trivial from the operation of step 3.
+	%If it was not correct, then there is an action $a \in A''$ that is not consistent with $C$.
+	%But all such action are removed at step 2.
+	%So that the algorithm output is correct.
+	%
+	%All action of the outputted Process Hitting $PH'$ are consistent with the input chronogram $C$.
+	\end{proof}
+\end{theorem}
+
 
 \begin{theorem}[Complexity]
 	\label{th:complexity}
 	Let $PH$ be a Process Hitting, $S$ be the number of sorts of $PH$ and $P$ be the maximal number of processes of a sort of $PH$.
 	Let $C$ be a chronogram of the genes of $PH$ over $T$ units of time, such that $c$ is the number of gene change of $C$.
-	The complexity of completing $PH$ by generating actions from the observations of $C$ with Algorithm \ref{alg:PHC} belongs to $O(c*i^S + (T-c) * P * i^S)$ that is bound by
-	$O(T^2*P^{S+2})$.
-	The complexity of completing $PH$ by generating actions from the observations of $C$ with Algorithm \ref{alg:PHC_ap} belongs to $O(c*i^S + (T*P*i^S)^2)$ that is bound by
-	$O(T*P^S + T^2*P^{2S+2})$.
+	%The complexity of completing $PH$ by generating actions from the observations of $C$ with Algorithm \ref{alg:PHC} belongs to $O(c\times i^S + (T-c) \times  P \times  i^S)$ that is bound by
+	%$O(T^2\times P^{S+2})$.
+	The memory use of our algorithm belongs to $O(T \times  P \times  i^S \times  2^{T\times  P \times  i^S})$ that is bound by $O(T \times  P^{S+1} \times  2^{T\times  P^{S+1}})$.
+	The complexity of completing $PH$ by generating actions from the observations of $C$ with Algorithm \ref{alg:PHC_ap} belongs to
+	$O(c\times i^S + (T\times P\times i^S)^2 + 2^{2\times T\times  P \times  i^S} + $c$ \times  2^{T\times  P \times  i^S})$ that is bound by $O(2^{3\times T\times P^{S+1}})$.
 	\begin{proof}
 		% Memory
 		Let $i$ be the maximal indegree of an action in $PH$, $0 \leq i \leq P$.
 		Let $p$ be a process of $PH$ and $n$ be the number of sorts that can influence $p$.
 		There is $i^S$ possible combinations of those process that can hit $p$, each of those can form an action.
-		There is $P$ process and atmost $T$ possibles delay, so that there are $T* P * i^S$ possibles actions, thus the memory of our algorithm is bound by $O(T * P * i^S)$,
-		which belongs to $O(T*P^{S+1})$ since $0 \leq i \leq P$.
-	
+		There is $P$ process and atmost $T$ possibles delay, so that there are $T\times  P \times  i^S$ possibles actions,
+		thus at step 1, the memory of our algorithm is bound by $O(T \times  P \times  i^S)$,
+		which belongs to $O(T\times P^{S+1})$ since $0 \leq i \leq P$.
+		Generating all minimal subset of actions $A$ of $PH'$ that realize $C$ can require to generate at most $2^{T\times  P \times  i^S}$ set of rules.
+		Thus, the memory of our algorithm belongs to $O(T \times  P \times  i^S \times  2^{T\times  P \times  i^S})$ and is bound by $O(T \times  P^{S+1} \times  2^{T\times  P^{S+1}})$.
 		% Run time
-		%At each time step, atmost one gene can change its Pue in the chronogram $C$.
-		Atmost $i^S$ actions can be produced for each gene change, the complexity of step 1 is then $O(c * i^S)$.
-		In step 2 of Algorithm \ref{alg:PHC} at each time step where there is no gene change, it checks all actions generated so far.
-		Since there is $T * P * i^S$ possibles actions, this operation complexity is $O( (T-c) * T * P * i^S)$.
-		Then the complexity of Algorithm \ref{alg:PHC} is $O(c*i^S + (T-c) * T * P * i^S)$.
-		Since $0 \leq i \leq P$ and $0 \leq c \leq T$ the complexity belongs to $O(T*P^S + T^2 * P^{S+1})$ and is bound by $O(T^2*P^{S+2})$.
+		%At each time step, atmost one gene can change its value in the chronogram $C$.
+		%Atmost $i^S$ actions can be produced for each gene change, the complexity of step 1 is then $O(c \times  i^S)$.
+		%In step 2 of Algorithm \ref{alg:PHC} at each time step where there is no gene change, it checks all actions generated so far.
+		%Since there is $T \times  P \times  i^S$ possibles actions, this operation complexity is $O( (T-c) \times  T \times  P \times  i^S)$.
+		%Then the complexity of Algorithm \ref{alg:PHC} is $O(c\times i^S + (T-c) \times  T \times  P \times  i^S)$.
+		%Since $0 \leq i \leq P$ and $0 \leq c \leq T$ the complexity belongs to $O(T\times P^S + T^2 \times  P^{S+1})$ and is bound by $O(T^2\times P^{S+2})$.
 		
 		%Sampling the chronogram (step 1) is linear in the number of time step and then bound by $O(T)$.
-		In Algorithm \ref{alg:PHC_ap},
-		merging the actions at step 2 is polynomial in the number of actions and the complexity of this operation belongs to $O((T*P*i^S)^2)$.
-		The complexity of this algorithm belongs to $O(c*i^S + (T*P*i^S)^2)$.
-		Since $0 \leq i \leq P$ and $0 \leq c \leq T$ the complexity of Algorithm \ref{alg:PHC_ap} is bound by $O(T*P^S + (T*P*P^S)^2) = (T*P^S + T^2*P^{2S+2})$.
+		Merging the actions at step 2 is polynomial in the number of actions and the complexity of this operation belongs to $O((T\times P\times i^S)^2)$.
+		The complexity of this algorithm belongs to $O(c\times i^S + (T\times P\times i^S)^2)$.
+		Since $0 \leq i \leq P$ and $0 \leq c \leq T$ the complexity of Algorithm \ref{alg:PHC_ap} is bound by $O(T\times P^S + (T\times P\times P^S)^2) = (T\times P^S + T^2\times P^{2S+2})$.
+		
+		Generating all minimal subset of actions $A$ of $PH'$ that realize $C$ can require to generate atmost $2^{T\times  P \times  i^S}$ set of rules.
+		Each set has to be compared with the others to keep only the minimal ones, this cost $O(2^{2\times T\times  P \times  i^S})$.
+		Furthermore, each set of action has to realize each change of $C$, it require to check $c$ changes and cost $O($c$ \times  2^{T\times  P \times  i^S})$.
+		Finally, the total complexity of completing $PH$ by generating actions from the observations of $C$ belongs to
+		$O(c\times i^S + (T\times P\times i^S)^2 + 2^{2\times T\times  P \times  i^S} + $c$ \times  2^{T\times  P \times  i^S})$ that is bound by $O(T\times P^S + (T\times P^{S+1})^2 + 2^{2\times T\times P^{S+1}} + $T$ \times  2^{T\times  P^{S+1}})$
 		$\qed$
 	\end{proof}
 \end{theorem}
