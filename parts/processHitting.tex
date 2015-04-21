@@ -116,14 +116,28 @@ We note that during these last years the Process Hitting framework was improved 
 In some cases it is necessary to represent a reaction of a set of components on one component. For example in the bio-chemical reactions :$X \xrightarrow{Y} Z$ or  $X + Y \rightarrow Y + Z$, where $ X $ is a set of reactives, $ Y $ a set of catalysts and $ Z $ a set of products.% In PH network the evolution is asynchronous so we consider that $Z$ is one component. 
 The plural action permits to represent this kind of reactions in PH. The plural is made up of two sets of processes of different sorts, which represent all the hitters and the bonds.
 
-\begin{definition}[Plural action]
-\label{def:pluralAction}
-It is a reaction of this form: \\
- $ \PHfrappemult{A}{B} \mid A, B \in Proc \setminus \emptyset \wedge \forall q \in B, \exists p \in A, (p \neq q \wedge \PHsort(p) = \PHsort(q)) $
+\begin{definition}[Process Hitting with plural actions]\label{def:PH}
+  A \emph{Process Hitting} is a triple $(\PHs,\PHl,\PHa)$ where:
+  \begin{itemize}
+    \item  $\PHs = \{a,b,\dots\}$ is the finite set of \emph{sorts};
+    \item  $\PHl = \prod_{a\in\PHs} \PHl_a$ is the set of \emph{states} where
+      $\PHl_a = \{a_0,\dots,a_{l_a}\}$
+      is the finite set of \emph{processes} of sort $a\in\Sigma$
+      and $l_a$ is a positive integer, with $a\neq b\Rightarrow \PHl_a \cap \PHl_b = \emptyset$;
+    \item  $\PHa = \{ \PHfrappe{A}{b_j}{b_k}  \mid A \subseteq \PHl \wedge b_j\neq b_k \wedge b \in sort(A) \Rightarrow A=b_j\}$
+      is the finite set of \emph{plural actions}.
+  \end{itemize}
 \end{definition}
 
+%\begin{definition}[Plural action]
+%\label{def:pluralAction}
+%It is a reaction of this form: \\
+% $ \PHfrappemult{A}{B} \mid A, B \in Proc \setminus \emptyset \wedge \forall q \in B, \exists p \in A, (p \neq q \wedge \PHsort(p) = \PHsort(q)) $
+%\end{definition}
+
+
 \begin{example}
-We give a simple example to represent a plurial action by a cooperation between two biological components ($x$ and $y$) in order to activate another component ($z$) and change its level from $0$ to $1$: $\{x_1, y_1, z_0 \} \rightarrow \{x_1, y_1, z_1 \} $.
+We give a simple example to represent a plurial action by a cooperation between two biological components ($x$ and $y$) in order to activate another component ($z$) and change its level from $0$ to $1$: $\{x_1, y_1, z_0 \} \rightarrow \{x_1, y_1, z_1 \} $ and in PH it can be translated by this action: $\PHfrappe{\{x_1 \wedge y_1\}}{z_0}{z_1} $.
 
 \begin{figure}[ht]
 \label{fig:ph-plurial} 
@@ -139,13 +153,13 @@ We give a simple example to represent a plurial action by a cooperation between 
 
 \end{tikzpicture}
 \caption{
-Representation of a plural action in Process Hitting network: $\{x_1, y_1, z_0 \} \rightarrow \{x_1, y_1, z_1 \} $. 
+Representation of a plural action in Process Hitting network: $\PHfrappe{\{x_1 \wedge y_1\}}{z_0}{z_1} $.
 }
 
 \end{figure}
 \end{example}
 
-In some dynamics it is crucial to have information about the delays between two events (two states in PH). The normal actions cannot show this information we just know that the state $s_2$ will be after $s_1$ in the next step but it is not possible to know how much time this transition takes time. We propose to add the delay in the action attributes which is responsable of the transition between the two states. That means that this action needs to be played during a specific time so that the system doesn't change the state (defintion \ref{def:TimedAction}).
+In some dynamics it is crucial to have information about the delays between two events (two states in PH). The normal actions cannot show this information we just know that the state $s_2$ will be after $s_1$ in the next step but it is not possible to know how much time this transition takes time. We propose to add the delay in the action attributes which is responsable of the transition between the two states. That means that this action needs to be played during a specific time so that the system doesn't change the state (definition \ref{def:TimedAction}).
 
 \begin{definition}[timed action]
 \label{def:TimedAction}
