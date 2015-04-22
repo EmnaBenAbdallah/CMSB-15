@@ -19,6 +19,7 @@
 %\newcommand{\PHa}{\mathcal{A}}
 \newcommand{\PHl}{\mathcal{L}}
 \newcommand{\PHn}{\mathcal{N}}
+\newcommand{\PHap}{\mathcal{H}_{tp}} % Ensemble des action du PH avec des actions plurielles
 
 \newcommand{\PHhitter}{\mathsf{hitter}}
 \newcommand{\PHtarget}{\mathsf{target}}
@@ -53,6 +54,12 @@
 \newcommand{\PHhitmult}[2]{\mbox{$#1 \PHhitmultsymbol #2$}}
 \newcommand{\PHfrappemult}{\PHhitmult}
 \newcommand{\PHfrappemults}[2]{\PHhitmult{\{#1\}}{\{#2\}}}
+
+%Action plurielle avec délai
+\newcommand{\PHhitdelayB}{\Rsh}
+\newcommand{\PHhitdelayA}[1]{\xrightarrow{#1} }
+\newcommand{\PHhitdelay}[4]{#1\PHhitdelayA{#2} #3 \PHhitdelayB #4}
+\newcommand{\PHfrappedelay}{\PHhitdelay}
 
 \def\PHget#1#2{{#1[#2]}}
 %\newcommand{\PHchange}[2]{#1\langle #2 \rangle}

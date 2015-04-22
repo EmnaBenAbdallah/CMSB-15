@@ -1,0 +1,136 @@
+\begin{thebibliography}{10}
+
+\bibitem{ahmad2006hybrid}
+Jamil Ahmad, Gilles Bernot, Jean-Paul Comet, Didier Lime, and Olivier Roux.
+\newblock Hybrid modelling and dynamical analysis of gene regulatory networks
+  with delays.
+\newblock {\em ComPlexUs}, 3(4):231--251, 2006.
+
+\bibitem{akutsu2009completing}
+Tatsuya Akutsu, Takeyuki Tamura, and Katsuhisa Horimoto.
+\newblock Completing networks using observed data.
+\newblock In {\em Algorithmic Learning Theory}, pages 126--140. Springer, 2009.
+
+\bibitem{Baral03}
+Chitta Baral.
+\newblock {\em Knowledge Representation, Reasoning and Declarative Problem
+  Solving}.
+\newblock Cambridge University Press, 2003.
+
+\bibitem{DBLP:conf/iclp/Baral08}
+Chitta Baral.
+\newblock Using answer set programming for knowledge representation and
+  reasoning: Future directions.
+\newblock In {\em ICLP}, pages 69--70, 2008.
+
+\bibitem{benabdallah2015}
+Emna Ben~Abdallah, Maxime Folschette, Olivier Roux, and Morgan Magnin.
+\newblock Exhaustive dynamic analysis of reachability and stable states of
+  biological regulatory networks modeled in process hitting using answer set
+  programming.
+\newblock Submitted to ICLP'2015, 2015.
+
+\bibitem{comet2012simplified}
+Jean-Paul Comet, Gilles Bernot, Aparna Das, Francine Diener, Camille Massot,
+  and Am{\'e}lie Cessieux.
+\newblock Simplified models for the mammalian circadian clock.
+\newblock {\em Procedia Computer Science}, 11:127--138, 2012.
+
+\bibitem{comet2010formal}
+Jean-Paul Comet, Jonathan Fromentin, Gilles Bernot, and Olivier Roux.
+\newblock A formal model for gene regulatory networks with time delays.
+\newblock In {\em Computational Systems-Biology and Bioinformatics}, pages
+  1--13. Springer, 2010.
+
+\bibitem{durzinsky2011automatic}
+Markus Durzinsky, Wolfgang Marwan, Max Ostrowski, Torsten Schaub, and Annegret
+  Wagler.
+\newblock Automatic network reconstruction using asp.
+\newblock {\em Theory and Practice of Logic Programming}, 11(4-5):749--766,
+  2011.
+
+\bibitem{folschette2013under}
+Maxime Folschette, Lo{\"\i}c Paulev{\'e}, Morgan Magnin, and Olivier Roux.
+\newblock Under-approximation of reachability in multivalued asynchronous
+  networks.
+\newblock {\em Electronic Notes in Theoretical Computer Science}, 299:33--51,
+  2013.
+
+\bibitem{DBLP:conf/iclp/GelfondL88}
+Michael Gelfond and Vladimir Lifschitz.
+\newblock The stable model semantics for logic programming.
+\newblock In {\em ICLP/SLP}, pages 1070--1080, 1988.
+
+\bibitem{inoue2013completing}
+Katsumi Inoue, Andrei Doncescu, and Hidetomo Nabeshima.
+\newblock Completing causal networks by meta-level abduction.
+\newblock {\em Machine learning}, 91(2):239--277, 2013.
+
+\bibitem{marx2013biology}
+Vivien Marx.
+\newblock Biology: The big challenges of big data.
+\newblock {\em Nature}, 498(7453):255--260, 2013.
+
+\bibitem{matsuno2000hybrid}
+Hiroshi Matsuno, Atsushi Doi, Masao Nagasaki, and Satoru Miyano.
+\newblock Hybrid petri net representation of gene regulatory network.
+\newblock In {\em Pacific Symposium on Biocomputing}, volume~5, page~87. World
+  Scientific Press Singapore, 2000.
+
+\bibitem{nakajima2013network}
+Natsu Nakajima and Tatsuya Akutsu.
+\newblock Network completion for time varying genetic networks.
+\newblock In {\em Complex, Intelligent, and Software Intensive Systems (CISIS),
+  2013 Seventh International Conference on}, pages 553--558. IEEE, 2013.
+
+\bibitem{nakajima2014exact}
+Natsu Nakajima and Tatsuya Akutsu.
+\newblock Exact and heuristic methods for network completion for time-varying
+  genetic networks.
+\newblock {\em BioMed research international}, 2014, 2014.
+
+\bibitem{nakajima2014network}
+Natsu Nakajima and Tatsuya Akutsu.
+\newblock Network completion for static gene expression data.
+\newblock {\em Advances in bioinformatics}, 2014, 2014.
+
+\bibitem{DBLP:journals/amai/Niemela99}
+Ilkka Niemel{\"a}.
+\newblock Logic programs with stable model semantics as a constraint
+  programming paradigm.
+\newblock {\em Ann. Math. Artif. Intell.}, 25(3-4):241--273, 1999.
+
+\bibitem{PMR10-TCSB}
+{L}o{\"i}c {P}aulev{\'e}, {M}organ {M}agnin, and {O}livier {R}oux.
+\newblock Refining dynamics of gene regulatory networks in a stochastic
+  $\pi$-calculus framework.
+\newblock In {\em Transactions on Computational Systems Biology XIII}, volume
+  6575 of {\em Lecture Notes in Comp Sci}, pages 171--191. Springer, 2011.
+
+\bibitem{PMR12-MSCS}
+{L}o{\"i}c Paulev\'{e}, Morgan Magnin, and Olivier Roux.
+\newblock Static analysis of biological regulatory networks dynamics using
+  abstract interpretation.
+\newblock {\em Mathematical Structures in Computer Science}, 22(04):651--685,
+  2012.
+
+\bibitem{siebert2008temporal}
+Heike Siebert and Alexander Bockmayr.
+\newblock Temporal constraints in the logical analysis of regulatory networks.
+\newblock {\em Theoretical Computer Science}, 391(3):258--275, 2008.
+
+\bibitem{videla2014learning}
+Santiago Videla, Carito Guziolowski, Federica Eduati, Sven Thiele, Martin
+  Gebser, Jacques Nicolas, Julio Saez-Rodriguez, Torsten Schaub, and Anne
+  Siegel.
+\newblock Learning boolean logic models of signaling networks with asp.
+\newblock {\em Theoretical Computer Science}, 2014.
+
+\bibitem{yamamoto2014completing}
+Yoshitaka Yamamoto, Adrien Rougny, Hidetomo Nabeshima, Katsumi Inoue, Hisao
+  Moriya, Christine Froidevaux, and Koji Iwanuma.
+\newblock Completing sbgn-af networks by logic-based hypothesis finding.
+\newblock In {\em Formal Methods in Macro-Biology}, pages 165--179. Springer,
+  2014.
+
+\end{thebibliography}

@@ -99,35 +99,16 @@ For any given process $a_i$ we also note: $a_i \in s$ if and only if $\PHget{s}{
 %is called a self-hitting process.
 %\end{definition}
 
-\begin{definition} [Playable action]
-\label{def:playableAction}
-Let $\PH = (\PHs,\PHl,\PHa)$ be a Process Hitting and $s \in \PHl$ a state of $PH$.
-We say that the action $h = \PHfrappe{a_i}{b_j}{b_k} \in \PHa$
-is \emph{playable in state $s$} if and only if
-$a_i \in s$ and $b_j \in s$ (\ie $\PHget{s}{a} = a_i$ and $\PHget{s}{b}=b_j$).
-The resulting state after playing $h$ in $s$
-is called a \emph{successor} of $s$ and
-is denoted by $(s \play h)$,
-where $\PHget{(s \play h)}{b} = b_k$ and
-$\forall c \in \PHs, c \neq b \Rightarrow \PHget{(s \play h)}{c}=\PHget{s}{c}$.
-\end{definition}
-
 We note that during these last years the Process Hitting framework was improved and we added new type of sorts like cooperative sorts and new actions like plural actions, actions with priority and actions with delay.
 
 In some cases it is necessary to represent a reaction of a set of components on one component. For example in the bio-chemical reactions :$X \xrightarrow{Y} Z$ or  $X + Y \rightarrow Y + Z$, where $ X $ is a set of reactives, $ Y $ a set of catalysts and $ Z $ a set of products.% In PH network the evolution is asynchronous so we consider that $Z$ is one component. 
 The plural action permits to represent this kind of reactions in PH. The plural is made up of two sets of processes of different sorts, which represent all the hitters and the bonds.
 
-\begin{definition}[Process Hitting with plural actions]\label{def:PH}
-  A \emph{Process Hitting} is a triple $(\PHs,\PHl,\PHa)$ where:
-  \begin{itemize}
-    \item  $\PHs = \{a,b,\dots\}$ is the finite set of \emph{sorts};
-    \item  $\PHl = \prod_{a\in\PHs} \PHl_a$ is the set of \emph{states} where
-      $\PHl_a = \{a_0,\dots,a_{l_a}\}$
-      is the finite set of \emph{processes} of sort $a\in\Sigma$
-      and $l_a$ is a positive integer, with $a\neq b\Rightarrow \PHl_a \cap \PHl_b = \emptyset$;
-    \item  $\PHa = \{ \PHfrappe{A}{b_j}{b_k}  \mid A \subseteq \PHl \wedge b_j\neq b_k \wedge b \in sort(A) \Rightarrow A=b_j\}$
-      is the finite set of \emph{plural actions}.
-  \end{itemize}
+\begin{definition}[Plural action]
+\label{def:pluralAction}
+\label{def:PhPluralAction}
+Let $\PH = (\PHs,\PHl,\PHa)$ be a process hitting.
+A  \emph{plural action} is an action noted by: $h=\PHfrappe{A}{b_j}{b_k}$ with $A \in \PHl^{\diamond} \wedge b_j\neq b_k \wedge if b_i \in A \Rightarrow A=b_j$.  We note that $\PHl^{\diamond}$ is the set of all the sub-states of $\PHl$.
 \end{definition}
 
 %\begin{definition}[Plural action]
@@ -162,15 +143,54 @@ Representation of a plural action in Process Hitting network: $\PHfrappe{\{x_1 \
 
 In some dynamics it is crucial to have information about the delays between two events (two states in PH). The normal actions cannot show this information we just know that the state $s_2$ will be after $s_1$ in the next step but it is not possible to know how much time this transition takes time. We propose to add the delay in the action attributes which is responsable of the transition between the two states. That means that this action needs to be played during a specific time so that the system doesn't change the state (definition \ref{def:TimedAction}).
 
-\begin{definition}[timed action]
+\begin{definition}[Timed plural action]
 \label{def:TimedAction}
-
+\label{def:PhTimedAction}
+A timed plural action is a plural action with a delay $D$: $\PHfrappedelay{A}{D}{b_i}{b_j}$ where $D \in \mathds{R}^+$, $A \in \PHl^{\diamond}$, and $b_i$, $b_j$ where  $b_i \not = b_j$ are two processes of the target sort $b$. If $b_i \in A$, $A=b_i$.
 \end{definition}
 
-\begin{definition}[temporised sort]
+\begin{definition}[Process Hitting with timed plural actions]\label{def:PH-plural}
+  A \emph{Process Hitting} is a triple $(\PHs,\PHl,\PHap)$ where:
+  \begin{itemize}
+    \item  $\PHs = \{a,b,\dots\}$ is the finite set of \emph{sorts};
+    \item  $\PHl = \prod_{a\in\PHs} \PHl_a$ is the set of \emph{states} where
+      $\PHl_a = \{a_0,\dots,a_{l_a}\}$
+      is the finite set of \emph{processes} of sort $a\in\Sigma$
+      and $l_a$ is a positive integer, with $a\neq b\Rightarrow \PHl_a \cap \PHl_b = \emptyset$;
+    \item  $\PHap = \{ \PHfrappedelay{A}{D}{b_j}{b_k}  \mid A \in \PHl^{\diamond}, b_j\neq b_k, b_i \in A \Rightarrow A=b_j\}$
+      is the finite set of \emph{timed plural actions}.
+  \end{itemize}
+\end{definition}
+
+\begin{definition} [Playable timed plural action]
+\label{def:playableAction}
+Let $\PH = (\PHs,\PHl,\PHap)$ be a Process Hitting with timed plural actions and $s \in \PHl$ a state of $PH$.
+We say that the action $h = \PHfrappedelay{A}{D}{b_i}{b_j}$
+is \emph{playable in state $s$} if and only if
+$A \subseteq s$ and $b_i \in s$. % (\ie$ \forall a_i \in A, \PHget{s}{a} = a_i$ and $\PHget{s}{b}=b_j$).
+\end{definition}
+
+\begin{definition}[Autonomous temporised sort]
 \label{def:TempSort}
-
+A sort $a$ is said to be an {\emph autonomous temporised sort} if and only if $\forall h = \PHfrappedelay{A}{D}{a_i}{a_j} \in \PHa$  where $a_i$ and $a_j$ are processes of $a$, we have only $A = \{a_i\}$.
+%it has only self actions during known delays:  $\PHfrappedelay{a_i}{D}{a_i}{a_j}$ and $\PHfrappedelay{a_j}{D'}{a_j}{a_k}$ ...
 \end{definition}
+
+\begin{definition} [Successor state]
+\label{def:playableAction}
+Let $\PH = (\PHs,\PHl,\PHap)$ be a Process Hitting with timed plural actions and $s \in \PHl$ be the state of $\PH$ at time $t$ .
+If there is no action in $PHa$ that is playable in $s$ the state of the system remain $s$ for all $t' > t$ (i.e. steady state).
+Let $h = \PHfrappedelay{A}{D}{b_i}{b_j}$ be a playable action in $s$.
+If there is no temporised sort $a$, that change its process from $a_i \in A$ to $a_j \not \in A$ while playing $h$ in $s$ then the state of $\PH$ at $t+D$
+%If $h$ is playable in $s$ during $D$ units of time, the resulting state after playing $h$ 
+is called a \emph{successor} of $s$ and
+is denoted by $(s \play h)$,
+where $\PHget{(s \play h)}{b} = b_k$ and
+$\forall c \in \PHs, c \neq b \Rightarrow \PHget{(s \play h)}{c}=\PHget{s}{c}$.
+%Between $s$ and $(s \play h)$ there is $D$ units of time where the state of the system remain $s$ .
+\end{definition}
+
+
 
 The PH was chosen for several reasons.
 First, it is a general framework that,
