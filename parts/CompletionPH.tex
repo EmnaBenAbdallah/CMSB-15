@@ -56,8 +56,11 @@ The intuition is that, in practice, if there is enougth observation, the delay o
 		\item Step 2 (optional): Merge each action with the same hitters, $S_1,P_1,\ldots, S_n,P_n$ and the same target, $G, P, P'$,
 		into one action where the delay is the average.
 		
-		\item Step 3: Generate $S$ the set of all minimal subsets of actions of $A$ that realize $C$:
-			$$\forall A \in S, \not \exists A' \in S, A' \subset A$$
+		\item Step 3: Generate $S$ the set of all subsets of actions of $A$ that realize $C$ such that:
+		\begin{itemize}
+			\item $A$ is minimal: $$\forall A \in S, \not \exists A' \in S, A' \subset A$$
+			\item Atmost one delay per action: $\forall h \in A$, where $h = \PHfrappedelay{A}{D}{b_j}{b_k}$, $\not \exists h' \in A$, such that $h' = \PHfrappedelay{A}{D'}{b_j}{b_k}, D \not = D'$.
+		\end{itemize}
 			
 		\item OUTPUT: S a set of completed Process Hitting that realize the chronogram.
 	\end{itemize}

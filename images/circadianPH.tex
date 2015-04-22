@@ -1,0 +1,169 @@
+\documentclass{letter}
+
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\usepackage{hyperref}
+
+
+\usepackage{amsmath}  % Maths
+\usepackage{amsfonts} % Maths
+\usepackage{amssymb}  % Maths
+\usepackage{stmaryrd} % Maths (crochets doubles)
+\usepackage{ dsfont }
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+
+%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings}
+% Définition du langage ASP
+\lstdefinelanguage{ASP}{%
+literate={:-}{$\leftarrow$}1,
+morekeywords={not},
+numbers=left,
+escapeinside={\%}{\^^M}
+}
+
+% Définition des styles de tous les listings du document
+\lstset{language=ASP,
+basicstyle=\small,
+columns=flexible,
+keywordstyle=\bfseries,
+firstnumber=last
+}
+\renewcommand{\thelstnumber}{\the\value{lstnumber}}
+%% fin définition
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{enumerate} % Personnalisation de la numérotation des listes
+\usepackage{url}     % Mise en forme + liens pour URLs
+\usepackage{array}   % Tableaux évolués
+\usepackage{comment}
+
+\usepackage{prettyref}
+\newrefformat{def}{Definition~\ref{#1}}
+\newrefformat{fig}{Figure~\ref{#1}}
+\newrefformat{pro}{Property~\ref{#1}}
+\newrefformat{pps}{Proposition~\ref{#1}}
+\newrefformat{lem}{Lemma~\ref{#1}}
+\newrefformat{th}{Theorem~\ref{#1}}
+\newrefformat{sec}{Section~\ref{#1}}
+%\newrefformat{subsec}{Subsect.~\ref{#1}}
+\newrefformat{suppl}{Appendix~\ref{#1}}
+\newrefformat{eq}{Eq.~\eqref{#1}}
+\def\pref{\prettyref}
+
+
+\usepackage{tikz}
+\newdimen\pgfex
+\newdimen\pgfem
+\usetikzlibrary{arrows,shapes,shadows,scopes}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix}
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{decorations.pathmorphing}
+
+%\input{macros/macros}
+
+%%%%%
+% Macros générales
+\def\Pint{\textsc{PINT}}
+
+
+% Notations spécifiques à ce papier
+\newcommand{\PHdirectpredec}[1]{\PHs^{-1}(#1)}
+\newcommand{\PHpredec}[1]{\f{pred}(#1)}
+\newcommand{\PHpredecgene}[1]{\f{reg}({#1})}
+\newcommand{\PHpredeccs}[1]{\PHpredec{#1} \setminus \Gamma}
+
+\tikzstyle{boxed ph}=[]
+\tikzstyle{sort}=[fill=lightgray,rounded corners]
+\tikzstyle{process}=[circle,draw,minimum size=15pt,fill=white,
+font=\footnotesize,inner sep=1pt]
+\tikzstyle{black process}=[process, fill=black,text=white, font=\bfseries]
+\tikzstyle{gray process}=[process, draw=black, fill=lightgray]
+\tikzstyle{current process}=[process, draw=black, fill=lightgray]
+\tikzstyle{process box}=[white,draw=black,rounded corners]
+\tikzstyle{tick label}=[font=\footnotesize]
+\tikzstyle{tick}=[black,-]%,densely dotted]
+\tikzstyle{hit}=[->,>=angle 45]
+\tikzstyle{selfhit}=[min distance=30pt,curve to]
+\tikzstyle{bounce}=[densely dotted,->,>=latex]
+\tikzstyle{hl}=[font=\bfseries,very thick]
+\tikzstyle{hl2}=[hl]
+\tikzstyle{nohl}=[font=\normalfont,thin]
+
+
+\tikzstyle{aS}=[every edge/.style={draw,->,>=stealth}]
+\tikzstyle{Asol}=[draw,circle,minimum size=5pt,inner sep=0,node distance=1.5cm]
+\tikzstyle{Aproc}=[draw,node distance=1.2cm]
+\tikzstyle{Aobj}=[node distance=1.5cm]
+\tikzstyle{Anos}=[font=\Large]
+
+%\tikzstyle{AprocPrio}=[Aproc,double]
+\tikzstyle{AsolPrio}=[Asol,double]
+\tikzstyle{AprocPrio}=[Aproc,double]
+\tikzstyle{aSPrio}=[aS,double]
+
+% Commandes À FAIRE
+%\usepackage{color} % Couleurs du texte
+%\newcommand{\todo}[1]{\textcolor{red}{\textbf{[[#1]]}}}
+%\newcommand{\TODO}{\todo{TODO}}
+
+%%%%%
+% Id est
+%\newcommand{\ie}{\textit{i.e.} }
+\newcommand{\ie}{i.e.\ }
+\newcommand{\resp}{resp.\ }
+
+% Césures
+\hyphenation{pa-ra-me-tri-za-tion}
+\hyphenation{pa-ra-me-tri-za-tions}
+
+
+\input{../macros/macros}
+\input{../macros/macros-ph}
+\input{../macros/tikzstyles2.tex}
+\input{../macros/macros-abstr}
+
+ \begin{document}
+
+\pagenumbering{gobble}
+
+\begin{tikzpicture}[apdotsimple/.style={apdot}]
+    \TSort{(0,4)}{L}{2}{l}
+    \TSort{(3,0)}{G}{2}{l}
+    \TSort{(7,4)}{PC}{2}{r}
+        
+  \TActionPlur{}{L_1.west}{L_0.north west}{}{-2,5.5}{right}
+   \node[labeldelai3] at (-1.6,5.4) {$16$};
+  \TActionPlur{}{L_0.west}{L_1.south}{}{-2,4.5}{right}
+  \node[labeldelai3] at (-1.6,4.4) {$\ 8\ $};
+    
+  \TActionPlur{L_0, G_1}{PC_0.west}{PC_1.south west}{}{4,2.5}{left}
+  \node[labeldelai2] at (4.4,2.6) {$c$};
+  \TActionPlur{L_1, G_1}{PC_1.west}{PC_0.south west}{}{4,3}{left}
+  \node[labeldelai2] at (4.4,3.1) {$g$};
+  \TActionPlur{L_1, G_0}{PC_1.east}{PC_0.east}{}{5,2.5}{left}
+  \node[labeldelai2] at (5.4,2.8) {$h$};
+  
+   \TActionPlur{L_0, PC_1}{G_1.south west}{G_0.south west}{}{1,1}{left}
+   \node[labeldelai4] at (1.3,0.9) {$a$};
+   \TActionPlur{L_1, PC_1}{G_1.west}{G_0.west}{}{1,2}{right}
+   \node[labeldelai4] at (1.4,1.8) {$e$};
+      
+   \TActionPlur{ PC_0}{G_0.east}{G_1.east}{}{5,0}{right}
+   \node[labeldelai1] at (5.4,0.5) {$f$};
+   \TActionPlur{ PC_1}{G_1.south}{G_0.north}{}{5,1}{right}
+    \node[labeldelai1] at (5.4,1.5) {$d$};
+
+    
+   % \TState{f_1, a_0, c_0}
+\end{tikzpicture}
+
+  
+ \end{document}
