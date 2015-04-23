@@ -1,0 +1,3211 @@
+------------------------------
+1 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+2 observations:
+
+Answer: 1
+action("c",1,"c",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+3 observations:
+
+Answer: 1
+action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("c",1,"c",1,0,1) action("f",1,"fc",3,2,2) action("f",1,"fc",3,2,1) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+4 observations:
+
+Answer: 1
+action("f",1,"c",0,1,2) action("f",1,"c",0,1,1) action("c",0,"c",0,1,2) action("c",0,"c",0,1,1) action("fc",2,"c",0,1,1) action("f",1,"fc",3,2,2) action("f",1,"fc",3,2,1) action("c",0,"fc",3,2,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+5 observations:
+
+Answer: 1
+action("f",1,"fc",2,3,2) action("f",1,"fc",2,3,1) action("c",1,"fc",2,3,1) action("f",1,"c",0,1,2) action("f",1,"c",0,1,1) action("c",0,"c",0,1,2) action("c",0,"c",0,1,1) action("fc",2,"c",0,1,1) action("f",1,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+6 observations:
+
+Answer: 1
+action("f",1,"c",1,0,1) action("fc",2,"c",1,0,1) action("c",1,"c",1,0,1) action("f",1,"fc",2,3,2) action("c",1,"fc",2,3,1) action("f",1,"fc",3,2,1) action("c",0,"fc",3,2,1) action("f",1,"fc",3,2,2) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+7 observations:
+
+Answer: 1
+action("f",1,"c",1,0,1) action("fc",2,"c",1,0,1) action("c",1,"c",1,0,1) action("f",1,"fc",2,3,4) action("f",1,"fc",2,3,3) action("f",1,"fc",2,3,2) action("f",1,"fc",2,3,1) action("c",1,"fc",2,3,1) action("f",1,"c",0,1,2) action("c",0,"c",0,1,2) action("fc",2,"c",0,1,1) action("fc",3,"c",1,0,1) action("f",1,"fc",3,2,2) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+8 observations:
+
+Answer: 1
+action("f",1,"c",1,0,1) action("fc",2,"c",1,0,1) action("c",1,"c",1,0,1) action("f",1,"fc",2,3,4) action("f",1,"fc",2,3,3) action("f",1,"fc",2,3,2) action("f",1,"fc",2,3,1) action("c",1,"fc",2,3,1) action("f",1,"c",1,0,2) action("fc",3,"c",1,0,1) action("c",1,"c",1,0,2) action("f",1,"c",0,1,2) action("c",0,"c",0,1,2) action("fc",2,"c",0,1,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+9 observations:
+
+Answer: 1
+action("f",1,"c",1,0,1) action("fc",2,"c",1,0,1) action("c",1,"c",1,0,1) action("f",1,"fc",2,3,5) action("f",1,"fc",2,3,4) action("f",1,"fc",2,3,3) action("f",1,"fc",2,3,2) action("c",1,"fc",2,3,1) action("f",1,"fc",3,2,1) action("c",0,"fc",3,2,1) action("fc",2,"c",0,1,2) action("c",0,"a",0,1,1) action("fc",2,"a",0,1,3) action("fc",2,"a",0,1,2) action("fc",2,"a",0,1,1) action("fc",3,"c",1,0,1) action("f",1,"fc",3,2,2) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+10 observations:
+
+Answer: 1
+action("c",0,"a",0,1,1) action("fc",2,"a",0,1,1) action("f",1,"c",1,0,2) action("f",1,"c",1,0,1) action("fc",2,"c",1,0,2) action("fc",2,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",1,"fc",2,3,7) action("f",1,"fc",2,3,6) action("f",1,"fc",2,3,5) action("f",1,"fc",2,3,4) action("f",1,"fc",2,3,3) action("f",1,"fc",2,3,2) action("f",1,"fc",2,3,1) action("c",1,"fc",2,3,1) action("fc",2,"a",1,0,1) action("c",1,"a",1,0,1) action("f",1,"c",0,1,2) action("c",0,"c",0,1,2) action("fc",2,"c",0,1,1) action("f",1,"fc",3,2,2) action("fc",3,"c",1,0,1) action("fc",2,"a",0,1,2) action("c",1,"a",0,1,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+11 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+12 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+13 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+14 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+15 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+16 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+17 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+18 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+19 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+20 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+21 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+22 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+23 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+24 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+25 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+26 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+27 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+28 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+29 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+30 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+31 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+32 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+33 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+34 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+35 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+36 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+37 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+38 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+39 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+40 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+41 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+42 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+43 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+44 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+45 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+46 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+47 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+48 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+49 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+50 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+51 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+52 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+53 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+54 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+55 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+56 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+57 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+58 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+59 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+60 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+61 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+62 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+63 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+64 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+65 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+66 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+67 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+68 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+69 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+70 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+71 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+72 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+73 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+74 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+75 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+76 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+77 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+78 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+79 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+80 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+81 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+82 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+83 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+84 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+85 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+86 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+87 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+88 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+89 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+90 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+91 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+92 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+93 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+94 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+95 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.000
+  Prepro.   : 0.020
+  Solving   : 0.000
+------------------------------
+------------------------------
+96 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+97 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+98 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+99 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+100 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+101 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",3,"c",1,0,1) action("f",1,"c",1,0,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+102 observations:
+
+Answer: 1
+action("f",0,"c",1,0,2) action("f",0,"c",1,0,1) action("fc",0,"c",1,0,1) action("c",1,"c",1,0,2) action("c",1,"c",1,0,1) action("f",0,"fc",2,0,2) action("f",0,"fc",2,0,1) action("c",1,"fc",2,0,1) action("fc",2,"c",0,1,1) action("f",0,"fc",3,2,1) action("c",0,"fc",3,2,2) action("c",0,"fc",3,2,1) action("f",1,"f",1,0,2) action("f",1,"f",1,0,1) action("f",1,"c",1,0,1) action("fc",3,"c",1,0,1) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+103 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+104 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+105 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+106 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+107 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+108 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+109 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+110 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+111 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+112 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+113 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+114 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+115 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+116 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+117 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+118 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+119 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+120 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+121 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+122 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+123 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+124 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+125 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+126 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+127 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+128 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+129 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+130 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+131 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+132 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+133 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+134 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+135 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+136 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+137 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+138 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+139 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+140 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+141 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+142 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+143 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+144 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+145 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+146 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+147 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+148 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+149 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+150 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+151 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+152 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+153 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+154 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+155 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+156 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+157 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+158 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+159 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+160 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+161 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+162 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+163 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+164 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+165 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+166 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+167 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+168 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+169 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+170 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+171 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+172 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+173 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+174 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+175 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+176 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+177 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+178 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+179 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+180 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+181 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+182 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+183 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+184 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+185 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+186 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+187 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+188 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+189 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+190 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+191 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+192 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+193 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+194 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+195 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+196 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+197 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+198 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+199 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+200 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+201 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+202 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+203 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+204 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+205 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+206 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+207 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+208 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+209 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+210 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+211 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+212 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+213 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+214 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+215 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+216 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+217 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+218 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+219 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+220 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+221 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+222 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+223 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+224 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+225 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+226 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+227 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+228 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+229 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+230 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+231 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+232 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+233 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+234 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+235 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+236 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+237 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+238 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+239 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+240 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+241 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+242 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+243 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+244 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+245 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+246 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+247 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------

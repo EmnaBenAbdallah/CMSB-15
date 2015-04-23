@@ -1,0 +1,2 @@
+existInfluence("PC","G"). existInfluence("PC","L"). existInfluence("G","PC"). existInfluence("G","L"). existInfluence("L","L"). obs("PC",0,31,35). obs("G",0,16,35). obs("PC",1,11,31). obs("G",1,5,16). obs("L",1,12,24). obs("PC",0,0,11). obs("G",0,0,5). obs("L",0,0,12). obs("L",0,24,35). process("L",0). process("L",1). process("PC",0). process("PC",1). process("G",0). process("G",1). 
+

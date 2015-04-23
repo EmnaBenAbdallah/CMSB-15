@@ -1,0 +1,770 @@
+------------------------------
+1 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+2 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+3 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+4 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+5 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+6 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,5) action("L",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+7 observations:
+
+Answer: 1
+action("L",0,"G",0,1,5) action("PC",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+8 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,5) action("L",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+9 observations:
+
+Answer: 1
+action("L",0,"G",0,1,5) action("PC",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+10 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,5) action("L",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+11 observations:
+
+Answer: 1
+action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("L",0,"G",0,1,5) action("PC",0,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"L",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+12 observations:
+
+Answer: 1
+action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"G",0,1,5) action("L",0,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+13 observations:
+
+Answer: 1
+action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("L",0,"G",0,1,5) action("PC",0,"G",0,1,5) action("L",0,"L",0,1,12) action("PC",0,"L",0,1,12) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"L",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,5) action("L",0,"L",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"PC",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+14 observations:
+
+Answer: 1
+action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("PC",0,"G",0,1,5) action("L",0,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("PC",0,"PC",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+15 observations:
+
+Answer: 1
+action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("L",0,"G",0,1,5) action("L",0,"L",0,1,12) action("PC",0,"L",0,1,12) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"L",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("L",0,"L",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"PC",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+16 observations:
+
+Answer: 1
+action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("L",0,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+17 observations:
+
+Answer: 1
+action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("L",0,"G",0,1,5) action("L",0,"L",0,1,12) action("PC",0,"L",0,1,12) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"L",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("L",0,"L",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"PC",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+18 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("L",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+19 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("L",0,"G",0,1,5) action("L",0,"L",0,1,12) action("PC",0,"L",0,1,12) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"L",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("L",0,"L",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"PC",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+20 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("L",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+21 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("L",0,"G",0,1,5) action("L",0,"L",0,1,12) action("PC",0,"L",0,1,12) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"L",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("L",0,"L",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"PC",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+22 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("L",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+23 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("L",1,"G",1,0,5) action("L",0,"G",0,1,5) action("L",0,"L",0,1,12) action("PC",0,"L",0,1,12) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) action("L",0,"L",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("L",0,"L",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"PC",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+24 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("L",1,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("L",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+25 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",1,"G",1,0,5) action("L",0,"G",0,1,5) action("L",0,"L",0,1,12) action("PC",0,"L",0,1,12) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) action("L",0,"L",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("L",0,"L",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"PC",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+26 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",1,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("L",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+27 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",1,"G",1,0,5) action("L",0,"G",0,1,5) action("L",0,"L",0,1,12) action("PC",0,"L",0,1,12) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) action("L",0,"L",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"PC",0,"G",0,1,5) action("L",0,"L",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"PC",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+28 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",1,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("L",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+29 observations:
+
+Answer: 1
+action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",1,"G",1,0,5) action("L",0,"L",0,1,12) action("PC",0,"L",0,1,12) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) action("L",0,"L",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"PC",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.020
+  Prepare   : 0.020
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+30 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.040
+  Prepare   : 0.040
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+31 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("L",0,"L",0,1,12) action("PC",0,"L",0,1,12) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) action("L",0,"L",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"PC",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.040
+  Prepare   : 0.040
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+32 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.040
+  Prepare   : 0.040
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+33 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("L",0,"L",0,1,12) action("PC",0,"L",0,1,12) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) action("L",0,"L",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"PC",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.040
+  Prepare   : 0.040
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+34 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.040
+  Prepare   : 0.040
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+35 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("L",0,"L",0,1,12) action("PC",0,"L",0,1,12) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) action("L",0,"L",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"PC",0,"L",0,1,12) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.040
+  Prepare   : 0.040
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+36 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.040
+  Prepare   : 0.040
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+37 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.060
+  Prepare   : 0.060
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+38 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.060
+  Prepare   : 0.060
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+39 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.060
+  Prepare   : 0.060
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+40 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.060
+  Prepare   : 0.060
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+41 observations:
+
+Answer: 1
+action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.060
+  Prepare   : 0.060
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+42 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.080
+  Prepare   : 0.080
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+43 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.080
+  Prepare   : 0.080
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+44 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.060
+  Prepare   : 0.060
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+45 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.080
+  Prepare   : 0.080
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+46 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("L",0,"G",0,1,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.080
+  Prepare   : 0.080
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+47 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("L",0,"G",1,0,5) action("PC",0,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("PC",0,"L",1,0,12) action("L",1,"L",1,0,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("PC",0,"PC",0,"L",1,0,12) action("L",1,"PC",0,"L",1,0,12) action("PC",0,"L",1,"L",1,0,12) action("L",1,"L",1,"L",1,0,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.080
+  Prepare   : 0.080
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+48 observations:
+
+Answer: 1
+action("PC",0,"G",0,1,7) action("L",1,"G",0,1,5) action("PC",0,"G",1,0,5) action("L",0,"G",1,0,5) action("PC",0,"L",0,1,12) action("L",0,"L",0,1,12) action("L",0,"G",0,1,5) action("L",1,"G",1,0,5) action("PC",0,"PC",0,"G",0,1,7) action("L",1,"PC",0,"G",0,1,5) action("PC",0,"L",1,"G",0,1,5) action("L",1,"L",1,"G",0,1,5) action("PC",0,"PC",0,"G",1,0,5) action("L",0,"PC",0,"G",1,0,5) action("PC",0,"L",0,"G",1,0,5) action("L",0,"L",0,"G",1,0,5) action("PC",0,"PC",0,"L",0,1,12) action("L",0,"PC",0,"L",0,1,12) action("PC",0,"L",0,"L",0,1,12) action("L",0,"L",0,"L",0,1,12) action("L",0,"PC",0,"G",0,1,5) action("PC",0,"L",0,"G",0,1,5) action("L",0,"L",0,"G",0,1,5) action("L",1,"PC",0,"G",1,0,5) action("PC",0,"L",1,"G",1,0,5) action("L",1,"L",1,"G",1,0,5) 
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.080
+  Prepare   : 0.080
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+49 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+50 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+51 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+52 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+53 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+54 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+55 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+56 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+57 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+58 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+59 observations:
+
+Answer: 1
+
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.000
+  Prepare   : 0.000
+  Prepro.   : 0.000
+  Solving   : 0.000
+------------------------------
+------------------------------
+60 observations:
+
