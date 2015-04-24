@@ -92,13 +92,6 @@ The active process of a given sort $a \in \PHs$ in a state $s \in \PHl$
 is noted $\PHget{s}{a}$.
 For any given process $a_i$ we also note: $a_i \in s$ if and only if $\PHget{s}{a} = a_i$. The dynamic of the PH networks is satisfied thanks to the actions. Indeed, the transition from one state $s_1$ to its successor $s_2$ is done when there is a playable action (definition \ref{def:playableAction}) at $s_1$. After each transition only one sort, or one component, changes its level from one process to another.
 
-%\begin{definition}[Action]
-%\label{def:PhAction}
-%An action is noted $\PHfrappe{a_i}{b_j}{b_k}$ where $a_i$ is a process
-%of sort $a$ and $b_j$, $b_k$ two processes of sort $b$. When $a_i = b_j$ , such an action is %refered as a self-action and $a_i$
-%is called a self-hitting process.
-%\end{definition}
-
 We note that during these last years the Process Hitting framework was improved and we added new type of sorts like cooperative sorts and new actions like plural actions, actions with priority and actions with delay.
 
 In some cases it is necessary to represent a reaction of a set of components on one component. For example in the bio-chemical reactions :$X \xrightarrow{Y} Z$ or  $X + Y \rightarrow Y + Z$, where $ X $ is a set of reactives, $ Y $ a set of catalysts and $ Z $ a set of products.% In PH network the evolution is asynchronous so we consider that $Z$ is one component. 
@@ -145,7 +138,7 @@ In some dynamics it is crucial to have information about the delays between two 
 
 \begin{definition}[Timed plural action]
 \label{def:TimedAction}
-\label{def:PhTimedAction}
+\label{def:TimedAction}
 A timed plural action is a plural action with a delay $D$: $\PHfrappedelay{A}{D}{b_i}{b_j}$ where $D \in \mathds{R}^+$, $A \in \PHl^{\diamond}$, and $b_i$, $b_j$ where  $b_i \not = b_j$ are two processes of the target sort $b$. If $b_i \in A$, $A=b_i$.
 \end{definition}
 
@@ -162,6 +155,9 @@ A timed plural action is a plural action with a delay $D$: $\PHfrappedelay{A}{D}
   \end{itemize}
 \end{definition}
 
+Duration of actions can now be represented in a Process Hitting model thanks to timed actions.
+The conditions of use of these new actions are as follows.
+
 \begin{definition} [Playable timed plural action]
 \label{def:playableAction}
 Let $\PH = (\PHs,\PHl,\PHap)$ be a Process Hitting with timed plural actions and $s \in \PHl$ a state of $PH$.
@@ -175,6 +171,14 @@ $A \subseteq s$ and $b_i \in s$. % (\ie$ \forall a_i \in A, \PHget{s}{a} = a_i$ 
 A sort $a$ is said to be an {\emph autonomous temporised sort} if and only if $\forall h = \PHfrappedelay{A}{D}{a_i}{a_j} \in \PHa$  where $a_i$ and $a_j$ are processes of $a$, we have only $A = \{a_i\}$.
 %it has only self actions during known delays:  $\PHfrappedelay{a_i}{D}{a_i}{a_j}$ and $\PHfrappedelay{a_j}{D'}{a_j}{a_k}$ ...
 \end{definition}
+
+The delays caused by those timed actions and temporised sorts have an impact on the system dynamics.
+Indeed, in our asynchronous model, only one action can be processing and the state of the system must not change during this time.
+But, clocks represented by autonomous temporised sorts can evolve in parrallel of processing actions.
+Those new sorts are an exception to the asynchronicity behavior of our model: multiple temporised sorts can change there processes at the same time.
+Thus, making possible that a change of the state of the system may occurs during the processing of an action.
+If this case occurs, the processing of the action is stopped and a new action can be played.
+The dynamic of a Process Hitting with timed plural actions is formally defined as follows.
 
 %Ajouter l'exemple de la sorte L de l'horloge circadienne
 
@@ -209,9 +213,7 @@ with one fact per action, as described in the next section.
 Other representations may have required supplementary complexity;
 for instance, a labeling would be required
 if actions could be triggered by a variable number of processes.
-
 %Parler de l'asynchrone model
-
-
-The rest of the report focuses on the representation of the previous definitions through ASP than we give the example of Circadian Clock network. Later we propose an approch to resolve the completion problem of PH networks with the use of ASP.
+We now show how to represent the previous definitions through ASP.
+% and provide a case study on the example of Circadian Clock network. Later we propose an approach to resolve the completion problem of PH networks with the use of ASP.
 
