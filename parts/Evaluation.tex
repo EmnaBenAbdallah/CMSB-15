@@ -3,6 +3,9 @@
 \label{sec:evaluation}
 \subsection{Application: Circadian clock}
 
+In this section we evaluate our approach on learnign the circadian clock actions.
+All experiments are run with a ASP implementation of Algorithm \ref{alg:PHC_ap} on a processor Intel Xeon (X5650, 2.67GHz) with 12GB of RAM.
+
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.4\linewidth]{images/circadianClock-summer.png}
@@ -37,9 +40,15 @@
 %
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.6\linewidth]{images/run_time}
+\includegraphics[width=0.6\linewidth]{images/circadian_run_time}
 \end{center}
-\caption{Run time of the application of  Algorithm \ref{alg:PHC_ap} on circadian clock chronograms varying the number of time steps.}
+\caption{Run time of the application of Algorithm \ref{alg:PHC_ap} on circadian clock chronograms varying the number of time steps.}
+\label{fig:run_time}
 \end{figure}
+
+Figure \ref{fig:run_time} show the evolution of run time of our ASP implementation of Algorithm \ref{alg:PHC_ap} on the inference of the circadian clock actions regarding the quantity of input data.
+In this experiment we analyse the scalability of our approach by varying the the number of time units of the input, i.e. the size of the chronogram.
+Here we can see that the time needed to analyse the input data grows exponentially.
+The experiments stop at 384 because the memory required by the ASP solver reached the 12GB of RAM we have.
 
 \subsection{Benchmarks}
