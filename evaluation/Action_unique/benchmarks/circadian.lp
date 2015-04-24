@@ -3,8 +3,6 @@ process("L",0..1).
 process("PC",0..1).
 process("G",0..1).
 
-temporised("L").
-
 %Actions to be learnt 
 action("PC",1,"L",0,"G",1,0,5).
 action("PC",0,"L",0,"G",0,1,5).
@@ -14,14 +12,13 @@ action("L",0,1,12).
 action("L",1,0,12).
 
 %Genes influe on "PC"
-existInfluence("PC","G").% :- not no_influence("PC","G").
-%no_influence("PC","G") :- not existInfluence("PC","G").
-existInfluence("PC","L").
+existInfluence("PC","G").
 
 %Genes influance on "G"
 existInfluence("G","PC").
-existInfluence("G","L").
-existInfluence("L","L").
+
+% L is an independent clock
+temporised("L").
 
 %Initial state of the network
 init(actifProcess("PC",0 )).
