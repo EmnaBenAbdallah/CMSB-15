@@ -146,20 +146,23 @@ font=\footnotesize,inner sep=1pt]
     
   \TActionPlur{L_0, G_1}{PC_0.west}{PC_1.south west}{}{4,2.5}{left}
   \node[labeldelai2] at (4.4,2.6) {$c$};
-  \TActionPlur{L_1, G_1}{PC_1.west}{PC_0.south west}{}{4,3}{left}
-  \node[labeldelai2] at (4.4,3.1) {$g$};
-  \TActionPlur{L_1, G_0}{PC_1.east}{PC_0.east}{}{5,2.5}{left}
-  \node[labeldelai2] at (5.4,2.8) {$h$};
+  \TActionPlur{L_1, G_1}{PC_1.north west}{PC_0.south west}{}{4,5}{left}
+  \node[labeldelai2] at (4.4,5.1) {$g$};
+  \TActionPlur{L_0, G_0}{PC_1.east}{PC_0.east}{}{4,3.7}{left}
+  \node[labeldelai2] at (4.3,4) {$a$};
+   \TActionPlur{L_1, G_0}{PC_1.west}{PC_0.north}{}{2,4}{right}
+   \node[labeldelai2] at (2.2,4.2) {$e$};
   
-   \TActionPlur{L_0, PC_1}{G_1.south west}{G_0.south west}{}{1,1}{left}
-   \node[labeldelai4] at (1.3,0.9) {$a$};
-   \TActionPlur{L_1, PC_1}{G_1.west}{G_0.west}{}{1,2}{right}
-   \node[labeldelai4] at (1.4,1.8) {$e$};
-      
-   \TActionPlur{ PC_0}{G_0.east}{G_1.east}{}{5,0}{right}
-   \node[labeldelai1] at (5.4,0.5) {$f$};
-   \TActionPlur{ PC_1}{G_1.south}{G_0.north}{}{5,1}{right}
+     \TActionPlur{L_0, PC_1}{G_1.south}{G_0.north east}{}{5,1}{left}
     \node[labeldelai1] at (5.4,1.5) {$d$};
+       \TActionPlur{L_1, PC_0}{G_0.east}{G_1.east}{}{5,0}{right}
+   \node[labeldelai1] at (5.4,0.5) {$f$};
+  
+   \TActionPlur{L_0, PC_0}{G_0.west}{G_1.south west}{}{1,2}{right}
+   \node[labeldelai4] at (1.4,1.8) {$b$};
+    \TActionPlur{L_1, PC_1}{G_1.west}{G_0.north west}{}{1,1}{right}
+   \node[labeldelai4] at (1.4,1) {$h$};
+      
 
     
    % \TState{f_1, a_0, c_0}
