@@ -4,7 +4,7 @@
 \section{Process Hitting}
 \label{sec:ph}
 
-Definition \ref{def:PH} introduces the Process Hitting(PH) \cite{PMR10-TCSB}
+Definition \ref{def:PH} introduces the Process Hitting (PH) \cite{PMR10-TCSB}
 which allows to model a finite number of local levels,
 called \emph{processes},
 grouped into a finite set of components, called \emph{sorts}.
@@ -87,12 +87,12 @@ A PH model example with three sorts: $a$, $b$ and $z$ ($a$ is either at level 0 
 \end{figure}
 \end{example}
 
-A state of the networks is a set of active processes containing a single process of each sort.
+A state of the PH is a set of active processes containing a single process of each sort.
 The active process of a given sort $a \in \PHs$ in a state $s \in \PHl$
 is noted $\PHget{s}{a}$.
 For any given process $a_i$ we also note: $a_i \in s$ if and only if $\PHget{s}{a} = a_i$. The dynamic of the PH networks is satisfied thanks to the actions. Indeed, the transition from one state $s_1$ to its successor $s_2$ is done when there is a playable action (definition \ref{def:playableAction}) at $s_1$. After each transition only one sort, or one component, changes its level from one process to another.
 
-We note that during these last years the Process Hitting framework was improved and we added new type of sorts like cooperative sorts and new actions like plural actions \cite{folschette-phd-14}, actions with priority and actions with delay.
+We note that during these last years the Process Hitting framework was improved and we added new type of sorts like cooperative sorts and new actions like plural actions \cite{folschette-phd-14}, actions with priority \cite{FPMR13-CS2Bio} and actions with delay.
 
 In some cases it is necessary to represent a reaction of a set of components on one component. For example in the bio-chemical reactions :$X \xrightarrow{Y} Z$ or  $X + Y \rightarrow Y + Z$, where $ X $ is a set of reactives, $ Y $ a set of catalysts and $ Z $ a set of products.% In PH network the evolution is asynchronous so we consider that $Z$ is one component. 
 The plural action permits to represent this kind of reactions in PH. The plural is made up of two sets of processes of different sorts, which represent all the hitters and the bonds.
@@ -100,7 +100,7 @@ The plural action permits to represent this kind of reactions in PH. The plural 
 \begin{definition}[Plural action]
 \label{def:pluralAction}
 \label{def:PhPluralAction}
-Let $\PH = (\PHs,\PHl,\PHa)$ be a process hitting.
+Let $\PH = (\PHs,\PHl,\PHa)$ be a Process Hitting.
 A \emph{plural action} is an action noted by: $h=\PHfrappe{A}{b_j}{b_k}$ with $A \in \PHl^{\diamond} \wedge b_j\neq b_k \wedge if b_i \in A \Rightarrow A=b_j$.
 With $\PHl^{\diamond}$ the set of all the sub-states of $\PHl$.
 \end{definition}
@@ -113,7 +113,7 @@ With $\PHl^{\diamond}$ the set of all the sub-states of $\PHl$.
 
 
 \begin{example}
-We give a simple example to represent a plurial action by a cooperation between two biological components ($x$ and $y$) in order to activate another component ($z$) and change its level from $0$ to $1$: $\{x_1, y_1, z_0 \} \rightarrow \{x_1, y_1, z_1 \} $ and in PH it can be translated by this action: $\PHfrappe{\{x_1 \wedge y_1\}}{z_0}{z_1} $.
+We give a simple example to represent a plurial action by a cooperation between two biological components ($x$ and $y$) in order to activate another component ($z$) and change its level from $0$ to $1$: $\{x_1, y_1, z_0 \} \rightarrow \{x_1, y_1, z_1 \} $. In PH, this can be translated by the following action: $\PHfrappe{\{x_1 \wedge y_1\}}{z_0}{z_1} $.
 
 \begin{figure}[ht]
 \label{fig:ph-plurial} 
@@ -135,7 +135,7 @@ Representation of a plural action in Process Hitting network: $\PHfrappe{\{x_1 \
 \end{figure}
 \end{example}
 
-In some dynamics it is crucial to have information about the delays between two events (two states in PH). The normal actions cannot show this information we just know that the state $s_2$ will be after $s_1$ in the next step but it is not possible to know how much time this transition takes time. We propose to add the delay in the action attributes which is responsable of the transition between the two states. That means that this action needs to be played during a specific time so that the system doesn't change the state (definition \ref{def:TimedAction}).
+In some dynamics it is crucial to have information about the delays between two events (two states in PH). The normal actions cannot show this information: we just know chronology, i.e., that the state $s_2$ will be after $s_1$ in the next step but it is not possible to know chronometry, i.e., how much time this transition takes to occur. We propose to add the delay in the action attributes which is responsable of the transition between the two states. That means that this action needs to be played during a specific time so that the system does not change its state (definition \ref{def:TimedAction}).
 
 \begin{definition}[Timed plural action]
 \label{def:TimedAction}
@@ -158,12 +158,12 @@ A timed plural action of $\PH$ is a plural action with a delay $D$: $\PHfrappede
 \end{definition}
 
 Duration of actions can now be represented in a Process Hitting model thanks to timed actions.
-Note that if all actions delays is set to 1 it is equivalent to Process Hitting without delays.
-The conditions of use of these new actions are as follows.
+Note that if all actions delays are set to 1 it is equivalent to Process Hitting without delays.
+The way these new actions should be used is described as follows.
 
 \begin{definition} [Playable timed plural action]
 \label{def:playableAction}
-Let $\PH = (\PHs,\PHl,\PHap)$ be a Process Hitting with timed plural actions and $s \in \PHl$ a state of $PH$.
+Let $\PH = (\PHs,\PHl,\PHap)$ be a PH with timed plural actions and $s \in \PHl$ a state of $PH$.
 We say that the action $h = \PHfrappedelay{A}{D}{b_i}{b_j}$
 is \emph{playable in state $s$} if and only if
 $A \subseteq s$ and $b_i \in s$. % (\ie$ \forall a_i \in A, \PHget{s}{a} = a_i$ and $\PHget{s}{b}=b_j$).
@@ -203,16 +203,16 @@ $\forall c \in \PHs, c \neq b \Rightarrow \PHget{(s \play h)}{c}=\PHget{s}{c}$.
 %Between $s$ and $(s \play h)$ there is $D$ units of time where the state of the system remain $s$ .
 \end{definition}
 
-The PH framework was chosen for several reasons.
+Even if there already exists a few hybrid formalisms, we chose to focus on this extension of the PH framework for several reasons.
 First, it is a general framework that,
 although it was mainly used for biological networks,
-allows to represent any kind of dynamical model,
-and converters to several other representations are available (see section%~\ref{comparison}).
+allows to represent any kind of dynamical models,
+and converters to several other representations are available (see section~\ref{comparison}).
 Although an efficient dynamical analysis already exists for this framework,
 based on an approximation of the dynamics,
-it is interesting to identify its limits
-and compare them to the approached we present later in this paper.
-Finally, the particular form of the actions in a PH model allow
+it is interesting to identify its limits (especially the fact that previous studies were focusing only on discrete, not timed, dynamics)
+and compare them to the approach we present later in this paper.
+Finally, the particular form of the actions in a PH model allows
 to easily represent them in ASP,
 with one fact per action, as described in the next section.
 Other representations may have required supplementary complexity;
