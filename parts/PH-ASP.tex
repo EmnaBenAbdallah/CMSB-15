@@ -35,24 +35,24 @@ PH network is easy to be presented in ASP. Indeed we need only three predicates 
 
 \begin{example}[Representation of a PH network in ASP]
 \label{ex1:asp-ph}
-The representation of the PH network of figure \ref{fig:ph} in ASP is the following:
+The representation of the PH given in figure \ref{fig:ph} into ASP is the following:
 \begin{lstlisting}
 process("a", 0..1). process("b", 0..1). process("z", 0..2). %\label{ASPprocess}
 sort(X) :- process(X,I) %\label{ASPsort}
 action("a",0,"b",1,0). action("a",1,"a",1,0). action("b",1,"z",0,2). %\label{actions1}
 action("b",0,"z",1,2). action("z",0,"a",0,1). %\label{actions2}
 \end{lstlisting}
-In line \ref{ASPprocess} we create the list of processes corresponding to each sort,
+In line \ref{ASPprocess}, we create the list of processes corresponding to each sort,
 for example the sort \texttt{"z"} has 3 processes numbered from \texttt{0} to \texttt{2};
 this specific predicate will in fact expand into the three following predicates:
 \texttt{process("z", 0)}, \texttt{process("z", 1)}, \texttt{process("z", 2)}.
 Line \ref{ASPsort} enumerates every sort of the network from the previous information.
-Finally, all the actions of the network are defined in lines \ref{actions1} and \ref{actions2};
+Finally, all actions of the model are defined in lines \ref{actions1} and \ref{actions2};
 for example, the first predicate \texttt{action("a",0,"b",1,0)} represents the action
 $\PHfrappe{a_0}{b_1}{b_0}$.
 \end{example}
 
-\begin{example}[Representation of PH network with plural-timed actions in ASP]
+\begin{example}[Representation of PH with plural-timed actions in ASP]
 \label{ex2:ph-asp}
 We can take the example at the figure \ref{fig:ph-plurial} and consider that the action  $\{x_1, y_1, z_0 \} \xrightarrow{D} \{x_1, y_1, z_1 \} $  has a delay "$D$" and in PH the action becomes: $x_1 \wedge \PHfrappe{y_1}{z_0}{z_1}$. So that the PH  network in ASP is:
 \begin{lstlisting}
@@ -62,6 +62,6 @@ action("x",1,"y",1,"z",0,1,D). %\label{pluralaction}
 The number of indegree in this action $i=2$, there is only 2 hitters. It is possible to have an indegree greater than $2$. We will show later that the number of the maximum indegree should be an input for in our algorithm.
 \end{example}
 
-The predicat \texttt{action} represents the ordinary actions as well as the plural actions. Indeed an ordinary action is a plural action with an indegree $1$. Moreover all the ordinary actions are a timed action with a dealy equal to $1$ unit of time. Each action need at least one step to be played  For example the action \texttt{action("a",0,"b",1,0)} is equivalent to \texttt{action("a",0,"b",1,0,1)}
-So the plural-timed action is a generalized way to represent the actions in a Process Hitting network. Thus in the following part we will consider only plural-timed actions. 
+The predicate \texttt{action} represents the ordinary actions as well as the plural actions. Indeed an ordinary action is a plural action with an indegree $1$. Moreover all the ordinary actions are timed actions with a delay equal to $1$ unit of time. Every action needs at least one step to be played. For example, the action \texttt{action("a",0,"b",1,0)} is equivalent to \texttt{action("a",0,"b",1,0,1)}
+As a result, the principle of having plural-timed actions in the modeling sounds like a generalized way to represent the actions in a Process Hitting network. That is why, in the following part, we will consider only plural-timed actions. 
 	
