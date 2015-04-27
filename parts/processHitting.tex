@@ -4,7 +4,7 @@
 \section{Process Hitting}
 \label{sec:ph}
 
-Definition \ref{def:PH} introduces the Process Hitting (PH) \cite{PMR10-TCSB}
+Definition \ref{def:PH} introduces the Process Hitting (PH) framework \cite{PMR10-TCSB}
 which allows to model a finite number of local levels,
 called \emph{processes},
 grouped into a finite set of components, called \emph{sorts}.
@@ -87,15 +87,15 @@ A PH model example with three sorts: $a$, $b$ and $z$ ($a$ is either at level 0 
 \end{figure}
 \end{example}
 
-A state of the PH is a set of active processes containing a single process of each sort.
+A state of a given PH consists in a set of active processes containing a single process of each sort.
 The active process of a given sort $a \in \PHs$ in a state $s \in \PHl$
 is noted $\PHget{s}{a}$.
 For any given process $a_i$ we also note: $a_i \in s$ if and only if $\PHget{s}{a} = a_i$. The dynamic of the PH networks is satisfied thanks to the actions. Indeed, the transition from one state $s_1$ to its successor $s_2$ is done when there is a playable action (definition \ref{def:playableAction}) at $s_1$. After each transition only one sort, or one component, changes its level from one process to another.
 
-We note that during these last years the Process Hitting framework was improved and we added new type of sorts like cooperative sorts and new actions like plural actions \cite{folschette-phd-14}, actions with priority \cite{FPMR13-CS2Bio} and actions with delay.
+It should be noted that during these last years the Process Hitting framework was gradually enriched with new type of sorts like cooperative sorts and new actions like plural actions \cite{folschette-phd-14}, actions with priority \cite{FPMR13-CS2Bio} and actions with delay.
 
-In some cases it is necessary to represent a reaction of a set of components on one component. For example in the bio-chemical reactions :$X \xrightarrow{Y} Z$ or  $X + Y \rightarrow Y + Z$, where $ X $ is a set of reactives, $ Y $ a set of catalysts and $ Z $ a set of products.% In PH network the evolution is asynchronous so we consider that $Z$ is one component. 
-The plural action permits to represent this kind of reactions in PH. The plural is made up of two sets of processes of different sorts, which represent all the hitters and the bonds.
+In some cases it is necessary to represent a reaction of a set of components on one component. For example in the bio-chemical reactions :$X \xrightarrow{Y} Z$ or  $X + Y \rightarrow Y + Z$, where $ X $ is a set of reactives, $ Y $ a set of catalysts and $ Z $ a set of products. % In PH network the evolution is asynchronous so we consider that $Z$ is one component. 
+Plural actions permit to represent this kind of reactions in PH. The plural is made up of two sets of processes of different sorts, which represent all the hitters and the bounces.
 
 \begin{definition}[Plural action]
 \label{def:pluralAction}
@@ -113,7 +113,7 @@ With $\PHl^{\diamond}$ the set of all the sub-states of $\PHl$.
 
 
 \begin{example}
-We give a simple example to represent a plurial action by a cooperation between two biological components ($x$ and $y$) in order to activate another component ($z$) and change its level from $0$ to $1$: $\{x_1, y_1, z_0 \} \rightarrow \{x_1, y_1, z_1 \} $. In PH, this can be translated by the following action: $\PHfrappe{\{x_1 \wedge y_1\}}{z_0}{z_1} $.
+We give a simple example to represent a plural action by a cooperation between two biological components ($x$ and $y$) in order to activate another component ($z$) and change its level from $0$ to $1$: $\{x_1, y_1, z_0 \} \rightarrow \{x_1, y_1, z_1 \} $. In PH, this can be translated by the following action: $\PHfrappe{\{x_1 \wedge y_1\}}{z_0}{z_1} $.
 
 \begin{figure}[ht]
 \label{fig:ph-plurial} 
@@ -135,7 +135,7 @@ Representation of a plural action in Process Hitting network: $\PHfrappe{\{x_1 \
 \end{figure}
 \end{example}
 
-In some dynamics it is crucial to have information about the delays between two events (two states in PH). The normal actions cannot show this information: we just know chronology, i.e., that the state $s_2$ will be after $s_1$ in the next step but it is not possible to know chronometry, i.e., how much time this transition takes to occur. We propose to add the delay in the action attributes which is responsable of the transition between the two states. That means that this action needs to be played during a specific time so that the system does not change its state (definition \ref{def:TimedAction}).
+In some dynamics it is crucial to have information about the delays between two events (two states of a PH). Classic actions cannot exhibit this information: we just know chronology, i.e., that the state $s_2$ will be after $s_1$ in the next step but it is not possible to know chronometry, i.e., how much time this transition takes to occur. We propose to add the delay in the action attributes which is responsable of the transition between the two states. That means that this action needs to be played during a specific time so that the system does not change its state (definition \ref{def:TimedAction}).
 
 \begin{definition}[Timed plural action]
 \label{def:TimedAction}
@@ -144,8 +144,8 @@ Let $\PH = (\PHs,\PHl,\PHa)$ be a process hitting and $\PHl^{\diamond}$ be the s
 A timed plural action of $\PH$ is a plural action with a delay $D$: $\PHfrappedelay{A}{D}{b_i}{b_j}$ where $D \in \mathds{R}^+$, $A \in \PHl^{\diamond}$, and $b_i$, $b_j$ where  $b_i \not = b_j$ are two processes of the target sort $b$. If $b_i \in A$, $A=b_i$.
 \end{definition}
 
-\begin{definition}[Dense Time Process Hitting]\label{def:PH-plural}
-  A \emph{Process Hitting} is a triple $(\PHs,\PHl,\PHap)$ where:
+\begin{definition}[Process Hitting with Timed Plural Actions]\label{def:PH-plural}
+  A \emph{Process Hitting with timed plural actions} is a triple $(\PHs,\PHl,\PHap)$ where:
   \begin{itemize}
     \item  $\PHs = \{a,b,\dots\}$ is the finite set of \emph{sorts};
     \item  $\PHl = \prod_{a\in\PHs} \PHl_a$ is the set of \emph{states} where
@@ -169,16 +169,16 @@ is \emph{playable in state $s$} if and only if
 $A \subseteq s$ and $b_i \in s$. % (\ie$ \forall a_i \in A, \PHget{s}{a} = a_i$ and $\PHget{s}{b}=b_j$).
 \end{definition}
 
-\begin{definition}[Autonomous temporised sort]
+\begin{definition}[Autonomous temporized sort]
 \label{def:TempSort}
-A sort $a$ is said to be an {\emph autonomous temporised sort} if and only if $\forall h = \PHfrappedelay{A}{D}{a_i}{a_j} \in \PHa$  where $a_i$ and $a_j$ are processes of $a$, we have only $A = \{a_i\}$.
+A sort $a$ is said to be an {\emph autonomous temporized sort} if and only if $\forall h = \PHfrappedelay{A}{D}{a_i}{a_j} \in \PHa$  where $a_i$ and $a_j$ are processes of $a$, we have only $A = \{a_i\}$.
 %it has only self actions during known delays:  $\PHfrappedelay{a_i}{D}{a_i}{a_j}$ and $\PHfrappedelay{a_j}{D'}{a_j}{a_k}$ ...
 \end{definition}
 
-The delays caused by those timed actions and temporised sorts have an impact on the system dynamics.
+The delays caused by those timed actions and temporized sorts have an impact on the system dynamics.
 Indeed, in our asynchronous model, only one action can be processing and the state of the system must not change during this time.
-But, clocks represented by autonomous temporised sorts can evolve in parrallel of processing actions.
-Those new sorts are an exception to the asynchronicity behavior of our model: multiple temporised sorts can change there processes at the same time.
+But, clocks represented by autonomous temporized sorts can evolve in parallel of processing actions.
+Those new sorts are an exception to the asynchronicity behavior of our model: multiple temporized sorts can change there processes at the same time.
 Thus, making possible that a change of the state of the system may occurs during the processing of an action.
 If this case occurs, the processing of the action is stopped and a new action can be played.
 The dynamic of a Process Hitting with timed plural actions is formally defined as follows.
@@ -189,12 +189,12 @@ In this model, two kinds of transitions may occur: \emph{dense-time} transitions
 
 % TODO: dense timed transition system
 
-\begin{definition}[Semantics of a dense-time Process Hittting]
+\begin{definition}[Semantics of a dense-time Process Hitting]
 \label{def:semantic}
 Let $\PH = (\PHs,\PHl,\PHap)$ be a dense-time Process Hitting and $s \in \PHl$ be the state of $\PH$ at time $t$ .
 If there is no action in $PHa$ that is playable in $s$ the state of the system remain $s$ for all $t' > t$ (i.e. steady state).
 Let $h = \PHfrappedelay{A}{D}{b_i}{b_j}$ be a playable action in $s$.
-If there is no temporised sort $a$, that change its process from $a_i \in A$ to $a_j \not \in A$ while playing $h$ in $s$ then the state of $\PH$ at $t+D$
+If there is no temporized sort $a$ that changes its process from $a_i \in A$ to $a_j \not \in A$ while playing $h$ in $s$ then the state of $\PH$ at $t+D$
 %If $h$ is playable in $s$ during $D$ units of time, the resulting state after playing $h$ 
 is called a \emph{successor} of $s$ and
 is denoted by $(s \play h)$,
@@ -203,8 +203,8 @@ $\forall c \in \PHs, c \neq b \Rightarrow \PHget{(s \play h)}{c}=\PHget{s}{c}$.
 %Between $s$ and $(s \play h)$ there is $D$ units of time where the state of the system remain $s$ .
 \end{definition}
 
-Even if there already exists a few hybrid formalisms, we chose to focus on this extension of the PH framework for several reasons.
-First, it is a general framework that,
+Even if there already exists a few hybrid formalisms, we chose to propose this extension of the PH framework for several reasons.
+First, PH is a general framework that,
 although it was mainly used for biological networks,
 allows to represent any kind of dynamical models,
 and converters to several other representations are available.% (see section~\ref{comparison}).
