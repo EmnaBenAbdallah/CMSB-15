@@ -14,6 +14,7 @@
 
 	% influences
 	existInfluence(Hitter_1,Target) :- action(Hitter_1,_,Target,_,_).
+	existInfluence(Sort,Sort) :- temporised(Sort).
 
 %-------------
 % Observers
