@@ -10,7 +10,7 @@ In this example we observe the evolution of gene $G$ and $PC$ during the night (
 Here we can see the 7 (resp. 5) hours of delay shift of $PC$ (resp. $G$) from $1$ to $0$ and vice versa.
 Indeed, $PC$ and $G$ respectively change there states $7$ hours and $5$ hours after a change occurs in the system.
 
-\begin{figure}[htb!]
+\begin{figure}[tb]
 \begin{center}
 \includegraphics[width=0.4\linewidth]{images/circadianClock-summer.png}
 \includegraphics[width=0.4\linewidth]{images/circadianClock-Courb.png}
@@ -26,41 +26,43 @@ Actions are represented by edges as follows: when a node have incoming edge its 
 Each action are labelled by their delay.
 Right part of the figure shows the representation of the circadian clock with the ASP formulation we presented in section \ref{sec:ph-asp}.
 
+
+
 \subsection{Experiments}
 
 In this section, we evaluate our approach on learning the circadian clock actions.
 All experiments are run with a ASP implementation of Algorithm \ref{alg:PHC_ap} on a processor Intel Xeon (X5650, 2.67GHz) with 12GB of RAM.
 
-\begin{figure}[htb!]
-\vspace{1.5cm}
-\includegraphics[width=0.63\linewidth]{images/circadianPH.pdf}
-%
-\hspace{0.1cm}
-%
-\begin{minipage}{0.32\linewidth}
-\vspace{-5cm}
-	\textbf{Nodes:} \\
-\texttt{{\ssmall process("L",0..1).} }\\
-\texttt{{\ssmall process("PC",0..1).}}\\
-\texttt{{\ssmall process("G",0..1).} }\\
-\texttt{{\ssmall temporised("L").} }\\
+	\begin{figure}[htb!]
+	\vspace{1.5cm}
+	\includegraphics[width=0.6\linewidth]{images/circadianPH.pdf}
+	%
+	\hspace{0.1cm}
+	%
+	\begin{minipage}{0.32\linewidth}
+	\vspace{-5cm}
+		\textbf{Nodes:} \\
+	\texttt{{\ssmall process("L",0..1).} }\\
+	\texttt{{\ssmall process("PC",0..1).}}\\
+	\texttt{{\ssmall process("G",0..1).} }\\
+	\texttt{{\ssmall temporised("L").} }\\
 
-\textbf{Actions:} \\
-\texttt{{\ssmall action("L",0, "L",0,1,  8).}} ~\\
-\texttt{{\ssmall action("L",1, "L",1,0,  16).}} ~\\
-\texttt{{\ssmall action("L",0, "G",0, "PC",1,0,  a).}} ~\\
-\texttt{{\ssmall action("L",0, "PC",0, "G",0,1, b).}} ~\\
-\texttt{{\ssmall action("L",0, "G",1, "PC",0,1, c).}} ~\\
-\texttt{{\ssmall action("L",0, "PC",1, "G",1,0, d).}} \\
-\texttt{{\ssmall action("L",1, "G",0, "PC",1,0,  e).}} ~\\
-\texttt{{\ssmall action("L",1, "PC",0, "G",0,1, f).}} ~\\
-\texttt{{\ssmall action("L",1, "G",1, "PC",1,0, g).}} ~\\
-\texttt{{\ssmall action("L",1, "PC",1, "G",1,0, h).}} 
+	\textbf{Actions:} \\
+	\texttt{{\ssmall action("L",0, "L",0,1,  8).}} ~\\
+	\texttt{{\ssmall action("L",1, "L",1,0,  16).}} ~\\
+	\texttt{{\ssmall action("L",0, "G",0, "PC",1,0,  a).}} ~\\
+	\texttt{{\ssmall action("L",0, "PC",0, "G",0,1, b).}} ~\\
+	\texttt{{\ssmall action("L",0, "G",1, "PC",0,1, c).}} ~\\
+	\texttt{{\ssmall action("L",0, "PC",1, "G",1,0, d).}} \\
+	\texttt{{\ssmall action("L",1, "G",0, "PC",1,0,  e).}} ~\\
+	\texttt{{\ssmall action("L",1, "PC",0, "G",0,1, f).}} ~\\
+	\texttt{{\ssmall action("L",1, "G",1, "PC",1,0, g).}} ~\\
+	\texttt{{\ssmall action("L",1, "PC",1, "G",1,0, h).}} 
 
-\end{minipage}
-\label{fig:PH_circadian}
-\caption{Representation of circadian clock in Process Hitting (left) and the equivalent ASP representation (right). The value $"a", "b", ..., "h"$ represent the delays in actions. }
-\end{figure}
+	\end{minipage}
+	\label{fig:PH_circadian}
+	\caption{Representation of circadian clock in Process Hitting (left) and the equivalent ASP representation (right). The value $"a", "b", ..., "h"$ represent the delays in actions. }
+	\end{figure}
 %
 
 When the ASP representation of a chronogram like the one of Figure \ref{fig:circadian_clock} is given as input to Algorithm \ref{alg:PHC_ap} it will generate all the timed actions that can induce the observed changes.
@@ -68,7 +70,7 @@ The delay of the action is simply determined from the time delay between two cha
 
 \begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=0.6\linewidth]{images/circadian_run_time}
+\includegraphics[width=0.5\linewidth]{images/circadian_run_time}
 \end{center}
 \caption{Run time of the application of Algorithm \ref{alg:PHC_ap} on circadian clock chronograms varying the number of time steps.}
 \label{fig:run_time}
@@ -82,5 +84,3 @@ It is currently quite difficult to obtain real data from biological system with 
 In work like \cite{Fippo14} the considered chronograms are only composed of about 10 points.
 Regarding the circadian clock, a chronogram of 100 data points is about 4 days of data, that is not much information, especially in cases where we want to analyze the effect of perturbations (for example, understand the recoverability phase in case of jet-lag). 
 % TODO Morgan: Plus de blabla
-
-\subsection{Benchmarks}

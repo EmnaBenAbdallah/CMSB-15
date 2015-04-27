@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{MOVEP14}
+Emna~Ben Abdallah.
+\newblock Exhaustive search of dynamical properties in process hitting using
+  asp.
+\newblock In {\em Extended abstract for the MOVEP student sessions, 82–88.
+  June 2014, Nantes, France}, 2014.
+
 \bibitem{ahmad2006hybrid}
 Jamil Ahmad, Gilles Bernot, Jean-Paul Comet, Didier Lime, and Olivier Roux.
 \newblock Hybrid modelling and dynamical analysis of gene regulatory networks
@@ -49,12 +56,38 @@ Markus Durzinsky, Wolfgang Marwan, Max Ostrowski, Torsten Schaub, and Annegret
 \newblock {\em Theory and Practice of Logic Programming}, 11(4-5):749--766,
   2011.
 
+\bibitem{Fippo14}
+Louis~Fippo Fitime, Andrea Beica, Olivier Roux, and Carito Guziolowski.
+\newblock Integrating time-series data on large-scale cell-based models:
+  application to skin differentiation.
+\newblock In {\em Evry Spring school, in Advances in Systems and Synthetic
+  Biology}, pages 57--72, 2014.
+
+\bibitem{folschette-phd-14}
+Maxime Folschette.
+\newblock {\em Mod\'elisation alg\'ebrique de la dynamique multi-\'echelles des
+  r\'eseaux de r\'egulation biologique}.
+\newblock PhD thesis, University of Nantes, ED STIM, Ecole Centrale de Nantes,
+  Universit\'e de Nantes, Nantes, October 2014.
+\newblock Sous la direction de: Olivier Roux et Morgan Magnin. Jury : Mireille
+  R'egnier (pr\'es.), Jean-Paul Comet (rapp.), Anne Siegel (rapp.), Denis
+  Thieffry.
+
 \bibitem{folschette2013under}
 Maxime Folschette, Lo{\"\i}c Paulev{\'e}, Morgan Magnin, and Olivier Roux.
 \newblock Under-approximation of reachability in multivalued asynchronous
   networks.
 \newblock {\em Electronic Notes in Theoretical Computer Science}, 299:33--51,
   2013.
+
+\bibitem{FPMR13-CS2Bio}
+Maxime Folschette, Lo{\"i}c Paulev{\'e}, Morgan Magnin, and Olivier Roux.
+\newblock Under-approximation of reachability in multivalued asynchronous
+  networks.
+\newblock {\em Electronic Notes in Theoretical Computer Science}, 299:33--51,
+  2013.
+\newblock 4th International Workshop on Interactions between Computer Science
+  and Biology (CS2Bio'13).
 
 \bibitem{DBLP:conf/iclp/GelfondL88}
 Michael Gelfond and Vladimir Lifschitz.

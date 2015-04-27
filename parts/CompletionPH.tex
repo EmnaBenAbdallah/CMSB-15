@@ -3,9 +3,9 @@
 \section{Revision of PH networks}
 \label{sec:ph-completion}
 
-\subsection{Asynchronous and non-deterministic networks}
+%\subsection{Asynchronous and non-deterministic networks}
 
-\subsection{Formalization}
+%\subsection{Formalization}
 
 %\begin{definition}[Applicability]
 %	Let $C$ be a chronogram and $a$ be an action of a Process Hitting $PH$ such that $a = action(S_1,P_1,\ldots, S_n,P_n, G, P, P', D)$.
@@ -23,6 +23,8 @@
 
 \subsection{Algorithm}
 In this section we propose a simple algorithm to revise Process Hitting networks.
+We assume that new observation data are provided as a {\it chronogram} of size $T$:
+the value of each variable is given for each time step $t$, $0 \leq t \leq T$, through a time interval discretization.   
 This algorithm takes as input a Process Hitting and a chronogram of genes evolutions of this network.
 Knowing the genes' influences (or assuming all possible influences),
 this algorithm will complete the input network by adding the delayed actions that could have realized the changes observed in the chronogram.
