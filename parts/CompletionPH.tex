@@ -35,7 +35,7 @@ Because of the delayed semantics, it is not possible to decide whether an action
 But we can output the minimal sets of actions necessary to realize the changes observed.
 %Like in Algorithm \ref{alg:ASPHC}, it generates all possible actions that can realize each change observed.
 %But then, since observation are not perfect, we cannot safely removed non-consistent actions.
-If the observation are not perfect, we can merge actions by replacing the one that only differ by the delay by one action whose delay is the average one.
+If the observations are not perfect, we can merge actions by replacing the one that only differs by the delay by one action whose delay is the average one.
 The intuition is that, in practice, if there are enough observations, the delay of those actions should tend to the real value.
 
 \begin{algorithm}
@@ -167,7 +167,7 @@ The intuition is that, in practice, if there are enough observations, the delay 
 		The complexity of this algorithm belongs to $O(c\times i^S + (T\times P\times i^S)^2)$.
 		Since $0 \leq i \leq P$ and $0 \leq c \leq T$ the complexity of Algorithm \ref{alg:PHC_ap} is bound by $O(T\times P^S + (T\times P\times P^S)^2) = (T\times P^S + T^2\times P^{2S+2})$.
 		
-		Generating all minimal subset of actions $A$ of $PH'$ that realize $C$ can require to generate at most $2^{T\times  P \times  i^S}$ set of rules.
+		Generating all minimal subsets of actions $A$ of $PH'$ that realize $C$ can require to generate at most $2^{T\times  P \times  i^S}$ set of rules.
 		Each set has to be compared with the others to keep only the minimal ones, which costs $O(2^{2\times T\times  P \times  i^S})$.
 		Furthermore, each set of actions has to realize each change of $C$, it requires to check $c$ changes and it costs $O($c$ \times  2^{T\times  P \times  i^S})$.
 		Finally, the total complexity of completing $PH$ by generating actions from the observations of $C$ belongs to

@@ -58,7 +58,7 @@ $\PHfrappe{a_0}{b_1}{b_0}$.
 
 \begin{example}[Representation of PH with plural-timed actions in ASP]
 \label{ex2:ph-asp}
-We can take the example at the figure \ref{fig:ph-plurial} and consider that the action  $\{x_1, y_1, z_0 \} \xrightarrow{D} \{x_1, y_1, z_1 \} $  has a delay "$D$" and in PH the action becomes: $x_1 \wedge \PHfrappe{y_1}{z_0}{z_1}$. So that the PH  network in ASP is:
+We can take the example given in figure \ref{fig:ph-plurial} and consider that the action  $\{x_1, y_1, z_0 \} \xrightarrow{D} \{x_1, y_1, z_1 \} $  has a delay "$D$" and in PH the action becomes: $x_1 \wedge \PHfrappe{y_1}{z_0}{z_1}$. As a consequence, the PH translated in ASP is the following:
 \begin{lstlisting}
 process("x", 0..1). process("y", 0..1). process("z", 0..1). %\label{ASPprocess2}
 action("x",1,"y",1,"z",0,1,D). %\label{pluralaction}
@@ -67,5 +67,5 @@ The number of indegree in this action $i=2$, there is only 2 hitters. It is poss
 \end{example}
 
 The predicate \texttt{action} represents the ordinary actions as well as the plural actions. Indeed an ordinary action is a plural action with an indegree $1$. Moreover all the ordinary actions are timed actions with a delay equal to $1$ unit of time. Every action needs at least one step to be played. For example, the action \texttt{action("a",0,"b",1,0)} is equivalent to \texttt{action("a",0,"b",1,0,1)}
-As a result, the principle of having plural-timed actions in the modeling sounds like a generalized way to represent the actions in a Process Hitting network. That is why, in the following part, we will consider only plural-timed actions. 
+As a result, the principle of having plural-timed actions in the modeling sounds like a generalized way to represent the actions in a Process Hitting network. That is why, in the following, we will consider only plural-timed actions. 
 	
